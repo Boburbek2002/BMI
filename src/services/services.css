@@ -1,0 +1,30 @@
+.service__item {
+  margin-bottom: 20px;
+}
+
+/* .service__item span i {
+  font-size: 2.2rem;
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 400 !important;
+  
+} */
+
+.thread {
+  background-image: url('about5.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 15em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.thread img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}

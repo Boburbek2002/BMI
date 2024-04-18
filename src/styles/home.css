@@ -1,0 +1,16 @@
+
+
+.hero__section {
+  /* background: var(--hero-bg); */
+  background-image: url('./../assets/images/about.jpg');
+  background-size: cover;
+  height: 300px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
