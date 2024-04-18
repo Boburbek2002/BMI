@@ -21,7 +21,7 @@ const Footer = () => {
             <Col lg="5" md="4">
               <ul>
                 <li>Email: jumaniyozovfaxriddin715@gmail.com</li>
-                <li>Phone: +998 91 315 01 32</li>
+                <li>Phone: +998 91 351 01 32</li>
                 <li>Address: Xonqa, Xorazm, O'zbekiston</li>
               </ul>
             </Col>
