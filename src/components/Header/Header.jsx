@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import "./header.css";
+import logo from "./../../assets/images/Logo.png";
 
 const nav__links = [
   {
@@ -25,10 +26,7 @@ const Header = () => {
         <Row>
           <div className="nav__wrapper">
             <div className="logo">
-              {/* <img src={logo} alt="Logo" /> */}
-              <div>
-                <h1>Logo</h1>
-              </div>
+              <img src={logo} alt="Logo" />
             </div>
 
             <div className="navigation">

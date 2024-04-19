@@ -17,8 +17,8 @@
 }
 
 .logo img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .logo h1 {
@@ -38,23 +38,6 @@
   color: var(--primary-color);
   font-weight: 500;
   cursor: pointer;
-}
-
-.nav__icons {
-  display: flex;
-  align-content: center;
-  column-gap: 1.2rem;
-}
-
-.nav__icons span i {
-  font-size: 1.4rem;
-  color: var(--primary-color);
-  cursor: pointer;
-}
-
-.cart__icon,
-.fav__icon {
-  position: relative;
 }
 
 .badge {
