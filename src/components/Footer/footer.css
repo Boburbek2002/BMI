@@ -16,5 +16,21 @@
     line-height: 2rem;
 }
 
+h1 {
+  text-align: center;
+  margin: 10px 0 20px 0 !important;
+}
 
+::placeholder {
+  color: #fff !important;
+  opacity: 1; 
+}
+
+::-ms-input-placeholder { 
+  color: #fff;
+}
+
+input, textarea {
+  color: #fff !important;
+}
 
