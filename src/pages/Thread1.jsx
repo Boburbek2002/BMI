@@ -1,408 +1,98 @@
 import React from 'react'
+import fishing2 from './../assets/images/fishing2.jpg'
 
 function Thread1() {
   return (
     <div className='container'>
 <strong>
-Fishing nima?
+Phishing nima?
 </strong>
 <br/><br/>
 
+<img src={fishing2} alt="Description of the image" />
+<p><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; Phishing - bu shaxsiy ma'lumotlaringizni o'g'irlash uchun firibgarlarning yashirin urinishi. Ular odatda sizni aldashga harakat qiladilar, masalan, bankingiz yoki tanish kompaniyangiz nomidan foydalanishadi. Parollaringiz yoki hisob raqamlaringiz kabi nozik ma'lumotlarni oshkor qilishingizga umid qilib, ular sizga elektron pochta xabarlari, SMS yuborishadi hatto qo'ng'iroq qilishadi.
+</p>
+<br/>
+
+
+
+
+
+
+
+
+<strong>
+Phishing turlari:
+</strong>
+<br></br>
+
 <p>
-Fishing firibgarliklari foydalanuvchilarni aldab, maxfiy ma'lumotlarni oshkor qilish, zararli dasturlarni yuklab olish va o'zlarini yoki ularning tashkilotlarini kiberjinoyatlarga duchor qilish.
+1. Elektron pochta orqali fishing: eng keng tarqalgan turi. Elektron pochta xabarlari banklar, ijtimoiy media platformalari yoki hatto davlat idoralari kabi qonuniy manbalardan kelganga o'xshaydi. Ular ko'pincha quyidagilarni o'z ichiga oladi:
+</p>
+<ul style={{ listStyleType: 'disc' }}>
+  <li>Soxta yuboruvchi manzillari: Haqiqiy kompaniyalarga taqlid qilish uchun mo'ljallangan aldamchi elektron pochta manzillari.</li>
+  <li>Shoshiltirish usuli: Hisob xavflari yoki cheklangan vaqtli takliflar tufayli sizni tezda harakat qilishga undaydigan bosim taktikasi.</li>
+  <li>Shubhali qo'shimchalar yoki havolalar: Bularni bosish ma'lumotni o'g'irlash yoki zararli dasturlarni yuklab olish uchun yaratilgan soxta veb-saytlarga olib boradi.</li>
+</ul>
+<br/>
+
+<p>
+2. Smishing: SMS matnli xabarlar orqali yetkaziladigan fishing urinishlari. Elektron pochta orqali fishingga o'xshash taktikalar, qisqartirilgan URL manzillari yoki soxta raqamlarga qo'ng'iroqlarni taklif qiluvchi shoshilinch xabarlar bilan qo'llaniladi.
 </p>
 <br/>
 
 <p>
-Fishing hujumlari - firibgar elektron pochta xabarlari, matnli xabarlar, telefon qo'ng'iroqlari yoki veb-saytlar bo'lib, foydalanuvchilarni quyidagi harakatlarga aldash uchun mo'ljallangan:
+3. Vishing: Vishing ovozli qo'ng'iroqlar orqali amalga oshiriladi. Fisherlar ishonchli tashkilotlar vakillariga o‘xshab, sizni aldab telefon orqali ma’lumotlarni olishga urinadi.
 </p>
 <br/>
 
 <p>
-Zararli dasturlarni yuklab olish ,
-Maxfiy ma'lumotlar yoki shaxsiy ma'lumotlarni almashish (masalan, ijtimoiy sug'urta va kredit karta raqamlari, bank hisob raqamlari, login ma'lumotlari),
-O'zlarini yoki ularning tashkilotlarini kiberjinoyatlarga duchor qiladigan boshqa harakatlar.
-</p>
-<br/>
-
-<p>
-Muvaffaqiyatli fishing hujumlari ko'pincha shaxsiy ma'lumotlarni o'g'irlash, kredit kartalari bilan firibgarlik, to'lov dasturi hujumlari, ma'lumotlarning buzilishi  va jismoniy shaxslar va korporatsiyalar uchun katta moliyaviy yo'qotishlarga olib keladi.
-
-
-</p>
-<br/>
-
-<p>
-Fishing ijtimoiy muhandislikning eng keng tarqalgan turi bo'lib , odamlarni aldash, bosim o'tkazish yoki noto'g'ri odamlarga ma'lumot yoki aktivlarni yuborish uchun manipulyatsiya qilishdir. Ijtimoiy muhandislik hujumlari muvaffaqiyat uchun inson xatosi va bosim taktikasiga tayanadi. Hujumchi jabrlanuvchi ishonadigan shaxs yoki tashkilot sifatida, masalan, hamkasbi, xo'jayin, jabrlanuvchi yoki jabrlanuvchining ish beruvchisi bilan shug'ullanadigan kompaniya sifatida namoyon bo'ladi va jabrlanuvchini shoshilinch harakat qilishiga majbur qiladi. Xakerlar va firibgarlar bu taktikadan foydalanadilar, chunki odamlarni aldash kompyuter yoki tarmoqqa buzib kirishdan ko'ra osonroq va arzonroqdir.
-</p>
-<br/>
-
-<p>
-FQB ma'lumotlariga ko'ra, xakerlar fishing elektron pochta xabarlarini jismoniy shaxslar va tashkilotlarga to'lov dasturini etkazib berishning eng mashhur hujum usuli sifatida afzal ko'radilar. IBM 2022 yilgi maʼlumotlar buzilishining narxi fishingni maʼlumotlar buzilishining ikkinchi eng keng tarqalgan sababi (oʻtgan yilgi toʻrtinchi oʻrindan koʻproq) va eng qimmat, jabrlanuvchilarga oʻrtacha 4,91 million AQSH dollari xarajati sifatida baholaydi.
+4. Spear Phishing: Fisherlar elektron pochta xabarlarini shaxsiylashtirish uchun qurbonlarni oldindan o'rganib, ularni ishonchliroq qilish uchun amalga oshiriladigan maqsadli hujum. Ma'lumotlar ijtimoiy media profillaridan yoki ma'lumotlar buzilishidan olinishi mumkin.
 </p>
 <br/>
 
 <strong>
-Fishing nima?
+  Phishingni amalga oshirish usullari:
 </strong>
-<br/>
 
-<p>
-Fishing hujumlari - firibgar elektron pochta xabarlari, matnli xabarlar, telefon qo'ng'iroqlari yoki veb-saytlar bo'lib, ular foydalanuvchilarni zararli dasturlarni yuklab olish , maxfiy ma'lumotlar yoki shaxsiy ma'lumotlarni (masalan, ijtimoiy sug'urta va kredit karta raqamlari, bank hisob raqamlari, login ma'lumotlari) almashish yoki olish uchun mo'ljallangan. o'zlarini yoki ularning tashkilotlarini kiberjinoyatlarga duchor qiladigan boshqa harakatlar.
-</p>
-<br/>
+<ul style={{ listStyleType: 'disc' }}>
+  <li>Soxta jo'natuvchi manzillari: Ular qonuniy kompaniyalarnikiga o'xshash elektron pochta manzillarini yaratadilar.
+</li>
+  <li>Ssenariy: Fisherlar sizni jalb qilish uchun ssenariy tuzadilar. Ular sizning hisobingiz buzilganligini, buyurtmangiz bilan bog‘liq muammo borligini yoki siz kutilmagan foyda olish huquqiga ega ekanligingizni da’vo qilishlari mumkin.</li>
+  <li>Shoshiltirish: Ular sizda shoshilinchlik tuyg'usini yaratib, tezda harakat qilishingizga majbur qiladi. Ushbu taktikada qo'rquv juda katta rol o'ynaydi va sizni xavfsizlik protokollarini chetlab o'tishga majbur qilishi mumkin.</li>
+  <li>Soxta veb-saytlar: Phishing elektron pochta xabarlari yoki matnlarida ko'pincha haqiqiy kirish sahifalarini taqlid qilish uchun mo'ljallangan veb-saytlarga havolalar mavjud. Hisob ma'lumotlaringizni kiritganingizdan so'ng, fisher ma'lumotlaringizni o'g'irlaydi.  </li>
+  <li>Zararli dasturlarni yuklab olish: Fishing elektron pochta xabarlari yoki matnlari ochilganda qurilmangizga zararli dasturlarni o'rnatadigan qo'shimchalarni o'z ichiga olishi mumkin. Ushbu zararli dastur ma'lumotlarni o'g'irlashi, tugmalar bosishlarini kuzatishi yoki fisherga qurilmangizga masofadan kirish huquqini berishi mumkin.</li>
+</ul>
 
 
-
-
-<p>
-Muvaffaqiyatli fishing hujumlari ko'pincha shaxsiy ma'lumotlarni o'g'irlash, kredit kartalari bilan firibgarlik, to'lov dasturi hujumlari, ma'lumotlarning buzilishi  va jismoniy shaxslar va korporatsiyalar uchun katta moliyaviy yo'qotishlarga olib keladi.
-</p>
-<br/>
 
 <strong>
-Fishing hujumlarining turlari
+Phishing tarmog'idan qanday himoyalanish mumkin?
+</strong><br/>
+
+<p>
+Phishing taktikasini tushunib, siz qurbon bo'lish xavfini sezilarli darajada kamaytirishingiz mumkin. Himoyalanish uchun asosiy strategiyalar:
+</p>
+<br/>
+
+<ul style={{ listStyleType: 'disc' }}>
+  <li>Elektron pochta xabarlari, matnlar va qo'ng'iroqlarni ko'rib chiqing: noma'lum yuboruvchilarning havolalari yoki qo'shimchalarini bosmang. Keraksiz qo'ng'iroqlardan ehtiyot bo'ling, hatto ular qonuniy tashkilotlardan bo'lsa ham.</li>
+  <li>Yuboruvchining qonuniyligini tekshiring: Agar elektron pochta yoki xabar mazmuniga ishonchingiz komil bo'lmasa, to'g'ri deb bilgan telefon raqami kabi ishonchli kanal orqali jo'natuvchi bilan bevosita bog'laning. Shubhali xabarda ko'rsatilgan aloqa ma'lumotlaridan foydalanmang.</li>
+  <li>Kuchli parollar va KFA(Ko'p faktorli autentifikatsiya): Barcha onlayn hisoblar uchun kuchli, noyob parollardan foydalaning va iloji boricha ko'p faktorli autentifikatsiyani (KFA) yoqing. KFA faqat parolingizdan tashqari barmoq izi, yuz skaneri yoki 1 martalik parollar orqali ikkinchi tekshirish bosqichini talab qilib, qoʻshimcha xavfsizlik qatlamini qoʻshadi.</li>
+  <li>Dasturiy ta'minotni yangilab turing: Phisherlar foydalanishi mumkin bo'lgan zaifliklarni tuzatish uchun operatsion tizimingizni, veb-brauzeringizni va xavfsizlik dasturlarini muntazam yangilab turing.</li>
+  <li>Shaxsiy ma'lumotlaringizni hech kimga uzatmang: Internetda va telefon orqali qanday shaxsiy ma'lumotlaringizni uzatishda ehtiyot bo'ling. Qonuniy kompaniyalar nomaqbul elektron pochta xabarlari, SMS xabarlar yoki qo'ng'iroqlar orqali maxfiy ma'lumotlarni so'ramaydi.</li>
+  <li>Veb sahifalar domeniga doimo e'tiborli bo'ling: Masalan microsoft.com va rnicrosoft.com domen nomlari bir qarashda bir xil ammo ular umuman boshqa saytlar domeni. Faqat 1-si haqiqiy Microsoft kompaniyasi sayti</li>
+</ul>
+
+
+<center>
+  <strong>
+Afsuski, fishing hujumlaridan to'liq himoyalanish qilish juda qiyin. Hujumchilar doimiy ravishda o'z taktikalarini rivojlantirmoqdalar, hatto eng oxirgi texnologiyani biladigan odamlar ham aqlli tarzda yaratilgan firibgarlikka aldanib qolishlari mumkin. Biroq, eng so'nggi phishing taktikalaridan xabardor bo'lish sizning hujumlarga qarshi turishingizda yordam beradi. Bizning veb sahifamiz bunda sizga yordam beradi. Sahifamizga tashrif buyuring va eng oxirgi yangiliklardan xabardor bo'ling.
 </strong>
-
-
-<p>
-Ommaviy fishing elektron pochta xabarlari
-</p>
+</center>
 <br/>
 
-<p>
-Ommaviy elektron pochta orqali fishing - bu fishing hujumining eng keng tarqalgan turi. Firibgar milliy yoki global bank, yirik onlayn-riteyler, mashhur dasturiy ta'minot yoki ilova ishlab chiqaruvchilari kabi yirik, taniqli qonuniy biznes yoki tashkilotdan kelganga o'xshash elektron pochta xabarini yaratadi. Keyin ular xabarni millionlab oluvchilarga yuborishadi, chunki ommaviy elektron pochta fishing bu raqamlar o'yini: o'zini o'zi so'zlagan jo'natuvchi qanchalik katta yoki ommabop bo'lsa, xaridor, obunachi yoki a'zo bo'lish ehtimoli shunchalik ko'p bo'ladi.
-</p>
-<br/>
-
-<p>
-Kiberjinoyatchilar fishing e-pochtasini qonuniy ko'rsatish uchun turli yo'llarni bosib o'tadilar. Ular odatda e-pochtaga yuboruvchining logotipini o'z ichiga oladi va "kimdan" elektron pochta manzilini yashirib, yuboruvchining domen nomini o'z ichiga oladi. Ba'zilar hatto jo'natuvchining domen nomini aldashadi, masalan, "microsoft.com" o'rniga "rnicrosoft.com" dan foydalanib, bir qarashda qonuniy ko'rinadi.
-</p>
-<br/>
-
-<strong>
-Spear fishing
-</strong>
-<br/>
-
-
-
-<p>
-Spear fishing  ma'lum bir shaxsni nishonga oladi - odatda maxfiy ma'lumotlar yoki tarmoq resurslariga imtiyozli kirish huquqiga ega yoki firibgar firibgarlik maqsadlarida foydalanishi mumkin bo'lgan maxsus vakolatga ega.
-</p>
-<br/>
-
-<p>
-Nayzali phisher maqsadni chinakam ishonadigan shaxs yoki shaxs - do'st, xo'jayin, hamkasb, hamkasb, ishonchli sotuvchi yoki moliyaviy muassasa sifatida ko'rsatish yoki maqsadli shaxs sifatida ko'rsatish uchun ma'lumot to'plash uchun maqsadni o'rganadi. Ijtimoiy tarmoqlar va tarmoq saytlari - odamlar ochiqchasiga hamkasblarini tabriklaydilar, hamkasblari va sotuvchilarni qo'llab-quvvatlaydilar va haddan tashqari baham ko'rishadi - nayza fishing tadqiqotlari uchun boy ma'lumot manbalari. 
-</p>
-<br/>
-
-<p>
-Ushbu ma'lumot bilan nayza phisher aniq shaxsiy ma'lumotlar yoki moliyaviy ma'lumotlar va nishonga ishonchli so'rovni o'z ichiga olgan xabarni yuborishi mumkin. Masalan, “Bugun tunda taʼtilga ketayotganingizni bilaman, lekin bugun ish yopilgunga qadar ushbu hisob-fakturani toʻlay olasizmi (yoki ushbu hisob raqamiga USDXXX.XX pul oʻtkazing)?”
-</p>
-<br/>
-
-<p>
-C-darajali rahbarga, badavlat shaxsga yoki boshqa qimmatli nishonga qaratilgan nayzali fishing hujumi odatda kit yoki kit ovlash hujumi deb ataladi.
-</p>
-<br/>
-
-<strong>
-Biznes elektron pochta kelishuvi (BEC)
-</strong>
-<br/>
-
-
-<p>
-BEC - korporatsiyalar yoki muassasalardan katta miqdordagi pul yoki o'ta qimmatli ma'lumotlarni (masalan, tijorat sirlari, mijozlar ma'lumotlari, moliyaviy ma'lumotlarni) o'g'irlashga urinish bo'lgan nayzali fishing hujumi sinfidir.
-</p>
-<br/>
-
-<p>
-BEC hujumlari turli shakllarda bo'lishi mumkin. Eng keng tarqalgan ikkitasiga quyidagilar kiradi:
-</p>
-<br/>
-
-<p>
---- Bosh direktorning firibgarligi : Firibgar C-darajali rahbarning elektron pochta akkauntini o'zini namoyon qiladi yoki unga bevosita buzib kiradi va past darajadagi xodimga soxta hisob raqamiga pul o'tkazish, firibgar sotuvchidan xarid qilish yoki fayllarni yuborishni buyurgan xabar yuboradi. ruxsatsiz tomon.
-</p>
-<br/>
-
-<p>
-Elektron pochta hisobini buzish (EAC) : firibgar quyi darajadagi xodimning elektron pochta hisobiga kiradi, masalan, moliya, savdo, ilmiy-tadqiqot ishlari bo‘yicha menejer – va undan sotuvchilarga soxta hisob-fakturalar yuborish, boshqa xodimlarga soxta to‘lovlar yoki depozitlarni amalga oshirishga ko‘rsatma berish uchun foydalanadi. , yoki maxfiy ma'lumotlarga kirishni so'rang.
-</p>
-<br/>
-
-
-
-
-
-<p>
-Ushbu hujumlarning bir qismi sifatida firibgarlar ko'pincha kompaniyaning elektron pochta akkauntlariga kirish huquqiga ega bo'lib, ular rahbar yoki xodimga elektron pochta hisob qaydnomasi hisobga olish ma'lumotlarini (foydalanuvchi nomi va parol) oshkor qilish uchun aldagan nayza xabarini yuborishadi. Masalan, " Parolingiz muddati tugashi arafasida" kabi xabar. Hisobingizni yangilash uchun ushbu havolani bosing ' hisob ma'lumotlarini o'g'irlash uchun mo'ljallangan soxta veb-saytga zararli havolani yashirishi mumkin.
-</p>
-<br/>
-
-<strong>
-Boshqa fishing texnikasi va taktikasi
-</strong>
-
-
-<p>
-SMS fishing yoki smishing mobil yoki smartfon matnli xabarlaridan foydalangan holda fishingdir. Eng samarali smishing sxemalari kontekstli, ya'ni smartfon hisobini boshqarish yoki ilovalar bilan bog'liq. Misol uchun, qabul qiluvchilar simsiz hisob-kitobni to'laganliklari uchun "rahmat" sifatida sovg'a taklif qiladigan yoki oqimli media xizmatidan foydalanishni davom ettirish uchun kredit karta ma'lumotlarini yangilashni so'ragan matnli xabar olishlari mumkin. 
-</p>
-<br/>
-
-<p>
-Ovozli fishing yoki vishing telefon qo'ng'irog'i orqali fishingdir. IP orqali ovoz (VoIP) texnologiyasi tufayli firibgarlar kuniga millionlab avtomatlashtirilgan vishing qo'ng'iroqlarini amalga oshirishlari mumkin. Ular ko'pincha qo'ng'iroqlarni qonuniy tashkilotlar yoki mahalliy telefon raqamlari kabi ko'rsatish uchun qo'ng'iroq qiluvchining identifikatorini buzishdan foydalanadilar. Vishing qo'ng'iroqlari odatda oluvchilarni kredit kartalarini qayta ishlash muammolari, muddati o'tgan to'lovlar yoki IRS bilan bog'liq muammolar haqida ogohlantirishlar bilan qo'rqitadi. Javob bergan oluvchilar kiberjinoyatchilarga maxfiy ma'lumotlarni taqdim etishadi. Ba'zi qabul qiluvchilar hatto qo'ng'iroq paytida firibgarlarga o'z kompyuterlarini masofadan boshqarishni berishadi.
-</p>
-<br/>
-
-<p>
-Ijtimoiy media-fishing  a'zolarning nozik ma'lumotlarini fishing qilish uchun ijtimoiy media platformasining turli imkoniyatlaridan foydalanadi. Firibgarlar platformalarning o‘z xabar almashish imkoniyatlaridan, masalan, Facebook Messenger, LinkedIn xabar almashish yoki InMail, Twitter DM’laridan, xuddi oddiy elektron pochta va matnli xabarlarni ishlatishlari kabi foydalanadilar. Ular, shuningdek, foydalanuvchilarga ijtimoiy tarmoq saytidan kelganga o'xshab, oluvchilardan kirish ma'lumotlari yoki to'lov ma'lumotlarini yangilashni so'ragan fishing elektron pochta xabarlarini yuborishadi. Ushbu hujumlar, ayniqsa, bir nechta ijtimoiy media saytlarida bir xil login ma'lumotlaridan foydalanadigan qurbonlar uchun qimmatga tushishi mumkin, bu juda keng tarqalgan "eng yomon amaliyot".
-</p>
-<br/>
-
-
-
-
-
-
-<p>
-Ilova yoki ilova ichidagi xabarlar . Mashhur mobil qurilmalar ilovalari va vebga asoslangan ( xizmat sifatida dasturiy ta'minot yoki SaaS ) ilovalari o'z foydalanuvchilariga muntazam ravishda elektron pochta xabarlarini yuboradilar. Natijada, bu foydalanuvchilar dastur yoki dasturiy ta'minot sotuvchilari elektron pochta xabarlarini aldaydigan fishing kampaniyalariga tayyor. Yana raqamlar o'yinini o'ynab, firibgarlar eng mashhur ilovalar va veb-ilovalardan (masalan, PayPal, Microsoft Office 365 yoki Teams) elektron pochta xabarlarini aldab, o'zlarining fishing pullarini olishadi. 
-</p>
-<br/>
-
-<strong>
-Firibgarlikdan himoya qilish
-</strong>
-
-<p>
-Xavfsizlik bo'yicha treninglar va eng yaxshi amaliyotlar
-</p>
-<br/>
-
-<p>
-Tashkilotlar foydalanuvchilarga fishing firibgarliklarini qanday aniqlashni o'rgatishlari va har qanday shubhali elektron pochta va matnli xabarlar bilan ishlash bo'yicha eng yaxshi amaliyotlarni ishlab chiqishlari tavsiya etiladi. Masalan, foydalanuvchilarga fishing elektron pochta xabarlarining ushbu va boshqa xarakterli xususiyatlarini tan olishga o'rgatish mumkin:
-</p>
-<br/>
-
-<p>
---- Maxfiy yoki shaxsiy ma'lumotlarni so'rash yoki profil yoki to'lov ma'lumotlarini yangilash,
-</p>
-<br/>
-
-
-
-
-
-
-<p>
---- Pul yuborish yoki ko'chirish so'rovlari,
-</p>
-<br/>
-
-<p>
---- Qabul qiluvchi so'ramagan yoki kutmagan fayl qo'shimchalari,
-</p>
-<br/>
-
-<p>
-
---- Shoshilinchlik hissi, ochiqdan-ochiq (“Sizning hisobingiz bugun yopiladi...”) yoki nozik (masalan, hamkasbingizning hisob-fakturani zudlik bilan toʻlash haqidagi soʻrovi) qamoq jazosi tahdidlari yoki boshqa noreal oqibatlar,
-</p>
-<br/>
-
-<p>
-Yomon imlo yoki grammatika,
-</p>
-<br/>
-
-
-
-<p>
---- Mos kelmaydigan yoki soxta yuboruvchi manzili,
-</p>
-<br/>
-
-<p>
---- Bit.Ly yoki boshqa havolalarni qisqartirish xizmati yordamida qisqartirilgan havolalar,
-</p>
-<br/>
-
-<p>
---- Matn o'rnida ishlatiladigan matn tasvirlari (xabarlarda yoki bog'langan veb-sahifalarda).
-</p>
-<br/>
-
-<p>
-Bu faqat qisman ro'yxat; afsuski, xakerlar aniqlanmaslik uchun har doim yangi fishing usullarini ishlab chiqadilar. Fishingga qarshi ishchi guruhining har chorakda chop etiladigan Phishing tendentsiyalari faoliyati hisoboti  (havola ibm.com dan tashqarida joylashgan) kabi nashrlar tashkilotlarga tezlikni oshirishda yordam berishi mumkin. 
-</p>
-<br/>
-
-<strong>
-Fishing bilan kurashadigan xavfsizlik texnologiyalari
-</strong>
-
-<p>
-Eng yaxshi foydalanuvchi o'qitish va qat'iy ilg'or amaliyotlarga qaramay, foydalanuvchilar hali ham xato qiladilar. Yaxshiyamki, bir nechta o'rnatilgan va rivojlanayotgan so'nggi nuqta va tarmoq xavfsizligi texnologiyalari xavfsizlik guruhlariga trening va siyosat to'xtab qolgan joyda fishingga qarshi kurashda yordam berishi mumkin.
-</p>
-<br/>
-
-<p>
---- Spam filtrlari va elektron pochta xavfsizligi dasturlari mavjud fishing firibgarliklari va mashinani o'rganish algoritmlari haqidagi ma'lumotlardan shubhali fishing elektron pochta xabarlarini (va boshqa spamlarni) aniqlash uchun foydalanadi. Keyin firibgarlik va spam alohida jildga ko'chiriladi va ulardagi barcha havolalar o'chiriladi.
-</p>
-<br/>
-
-<p>
---- Antivirus va zararli dasturlarga qarshi dasturlar fishing elektron pochta xabarlarida zararli fayllar yoki kodlarni aniqlaydi va zararsizlantiradi.
-</p>
-<br/>
-
-<p>
-  --- Ko'p faktorli autentifikatsiya foydalanuvchi nomi va paroldan tashqari kamida bitta kirish ma'lumotlarini talab qiladi, masalan, foydalanuvchilarning mobil telefoniga yuborilgan bir martalik kod. Parollarni muvaffaqiyatli buzadigan fishing firibgarliklari yoki boshqa hujumlarga qarshi qo'shimcha oxirgi himoya chizig'ini taqdim etish orqali ko'p faktorli autentifikatsiya nayzali fishing hujumlarini yo'q qilishi va BECni oldini olishi mumkin.
-</p>
-<br/>
-
-
-
-
-<p>
----  
-
-Veb-filtrlar foydalanuvchilarning maʼlum zararli veb-saytlarga (“qora roʻyxatga olingan” saytlar) kirishiga yoʻl qoʻymaydi va foydalanuvchilar shubhali zararli yoki soxta veb-saytlarga tashrif buyurganlarida ogohlantirishlarni koʻrsatadi.
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-  
-</p>
-<br/>
-
-
-
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-  
-</p>
-<br/>
-
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-  
-</p>
-<br/>
-
-
-
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-  
-</p>
-<br/>
-
-
-
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-  
-</p>
-<br/>
-
-
-
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-
-</p>
-<br/>
-
-<p>
-  
-</p>
-<br/>
-
-
-'
 
 
 

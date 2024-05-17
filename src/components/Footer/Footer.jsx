@@ -10,12 +10,8 @@ const Footer = () => {
         <div className="footer_top">
           <Row className="footer_text">
             <Col lg="4" md="4">
-              <h1>Hello!</h1>
-              <p className="mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorem corrupti animi culpa quisquam autem facere nemo ut earum
-                voluptates! Eum rem aliquid consequuntur odio aspernatur quasi
-                deserunt at? Nemo, tempora.
+              <p className="container mb-3" style={{ color: 'white' }}>
+              Afsuski, kiberhujumlardan to'liq himoyalanish juda qiyin. Hujumchilar doimiy ravishda o'z taktikalarini rivojlantirmoqdalar. Biroq, eng so'nggi kiber taktikalardan xabardor bo'lish sizning hujumlarga qarshi turishingizda yordam beradi. Bizning veb sahifamiz bunda sizga yordam beradi
               </p>
               <ul>
                 <li>
