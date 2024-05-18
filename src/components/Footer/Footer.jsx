@@ -1,9 +1,11 @@
-// Footer.js
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { useTranslation } from "react-i18next";
 import "./footer.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <Container>
@@ -11,19 +13,19 @@ const Footer = () => {
           <Row className="footer_text">
             <Col lg="4" md="4">
               <p className="container mb-3" style={{ color: 'white' }}>
-              Afsuski, kiberhujumlardan to'liq himoyalanish juda qiyin. Hujumchilar doimiy ravishda o'z taktikalarini rivojlantirmoqdalar. Biroq, eng so'nggi kiber taktikalardan xabardor bo'lish sizning hujumlarga qarshi turishingizda yordam beradi. Bizning veb sahifamiz bunda sizga yordam beradi
+                {t('footerDescription')}
               </p>
               <ul>
-                <li>
-                  Email: faxriddincoder@gmail.com
+                <li style={{ color: 'white' }}>
+                  {t('footerEmail')} jumaniyozovfaxriddin715@gmail.com
                 </li>
-                <li>Phone: +998 99 351 01 32</li>
-                <li>Xonqa, Xorazm, O'zbekiston</li>
+                <li style={{ color: 'white' }}>{t('footerPhone')} +998 99 351 01 32</li>
+                <li style={{ color: 'white' }}>{t('footerLocation')}</li>
               </ul>
             </Col>
             <Col lg="5" md="4">
               <div class="container">
-                <h1>Biz bilan bog'lanish</h1>
+                <h1 style={{ color: 'white' }}>{t('footerContact')}</h1>
                 <form
                   target="_blank"
                   action="https://formsubmit.co/faxriddincoder@gmail.com"
@@ -36,7 +38,7 @@ const Footer = () => {
                           type="text"
                           name="name"
                           class="form-control mb-2 bg-secondary border border-secondary shadow-none"
-                          placeholder="Ism"
+                          placeholder={t('namePlaceholder')}
                           required
                         />
                       </div>
@@ -45,7 +47,7 @@ const Footer = () => {
                           type="email"
                           name="email"
                           class="form-control mb-2 bg-secondary border border-secondary shadow-none"
-                          placeholder="Email manzilingiz"
+                          placeholder={t('emailPlaceholder')}
                           required
                         />
                       </div>
@@ -53,7 +55,7 @@ const Footer = () => {
                   </div>
                   <div class="form-group">
                     <textarea
-                      placeholder="Xabar"
+                      placeholder={t('messagePlaceholder')}
                       class="form-control mb-2 bg-secondary border border-secondary shadow-none"
                       name="message"
                       rows="5"
@@ -71,7 +73,7 @@ const Footer = () => {
                       type="submit"
                       class="btn btn-lg btn-primary btn-block"
                     >
-                      Jo'natish
+                      {t('submit')}
                     </button>
                   </div>
                 </form>

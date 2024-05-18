@@ -1,0 +1,271 @@
+{
+  "phishingWhat": "Fishing nima?",
+  "phishingText": "Fishing - bu ishonchsiz axborotlarni olish uchun halokatli urinishdir. Ular odatda sizni aldashga harakat qiladilar, masalan, bankingiz yoki tanilgan kompaniya ma'lumotlari. Parollaringiz yoki hisob raqamlaringiz kabi nozik axborotlarni oshkor qilishni umid qilib, ular sizga elektron pochta xabarlari, SMS yuborishadi hatto qo'ng'iroq qilishadi.",
+  "phishingTypes": "Fishing turlari:",
+  "emailPhishing": "Elektron pochta orqali Fishing",
+  "emailPhishingDetails": [
+    "Soxta jo'natuvchi manzillari: Haqiqiy kompaniyalarga taqlid qilish uchun mo'ljallangan aldamchi elektron pochta manzillari.",
+    "Shoshiltirish usuli: Hisob xavflari yoki cheklangan vaqtli takliflar tufayli sizni tezda harakat qilishga undaydigan bosim taktikasi.",
+    "Shubhali qo'shimchalar yoki havolalar: Bularni bosish ma'lumotni o'g'irlash yoki zararli dasturlarni yuklab olish uchun yaratilgan soxta veb-saytlarga olib boradi."
+  ],
+  "smishing": "Smishing",
+  "smishingDetails": "Smishing: Fishing urinishlarini SMS matnli xabarlari orqali yetkaziladi. Elektron pochta orqali Fishingga o'xshash taktikalar, qisqartirilgan URL manzillari yoki shubhali telefon raqamlari bilan qo'llaniladi.",
+  "vishing": "Vishing",
+  "vishingDetails": "Vishing: Fishing urinishlari ovozli qo'ng'iroqlar orqali amalga oshiriladi. Fisherlar ishonchli tashkilotlar vakillariga o‘xshab, sizni aldab telefon orqali ma’lumotlarni olishga urinadi.",
+  "spearPhishing": "Spear Fishing",
+  "spearPhishingDetails": "Spear Fishing: Fisherlar elektron pochta xabarlari to'g'risida odamlarni tuzib, ularni ishonchliroq qilish uchun maqsadli hujumlar amalga oshirish uchun moslashtiradilar. Ma'lumotlar ijtimoiy media profillaridan yoki ma'lumotlar buzilishidan olinishi mumkin.",
+  "phishingMethods": "Fishing amalga oshirish usullari:",
+  "phishingMethodsDetails": [
+    "Soxta jo'natuvchi manzillari: Ular qonuniy kompaniyalarning manzillari bilan o'xshash elektron pochta manzillarini yaratishadi.",
+    "Ssenariy: Fisherlar sizni jalb qilish uchun senariy yozishadi. Ular sizning hisobingiz buzilganligini, buyurtmangiz bilan bog‘liq muammo borligini yoki siz kutilmagan foyda olish huquqiga ega ekanligingizni da’vo qilishlari mumkin.",
+    "Shoshiltirish: Ular sizda shoshilinchlik tuyg'usini yaratib, tezda harakat qilishingizga majbur qiladi. Ushbu taktikada qo'rquv juda katta rol o'ynaydi va sizni xavfsizlik protokollarini chetlab o'tishga majbur qilishi mumkin.",
+    "Soxta veb-saytlar: Fishing elektron pochta xabarlari yoki matnlari ochilganda, odatda haqiqiy kirish sahifalarini taqlid qilish uchun yaratilgan soxta veb-saytlar havolalari mavjud. Hisob ma'lumotlaringizni kiritgandan so'ng, fisher ma'lumotlaringizni o'g'irlaydi.",
+    "Zararli dasturlarni yuklab olish: Fishing elektron pochta xabarlari yoki matnlari ochilganda, qurilmangizga zararli dasturlarni o'rnatish uchun qo'shimchalarni yuklab olishi   mumkin. Ushbu zararli dastur ma'lumotlarni o'g'irlashi, tugmalar bosishlarini kuzatishi yoki fisherga qurilmangizga masofadan kirish huquqini berishi mumkin."
+  ],
+  "defensePhishing": "Fishing ga qarshi himoya:",
+  "defenseStrategies": "Himoya strategiyalari:",
+  "defenseStrategiesDetails": [
+    "Elektron pochta, SMS va qo'ng'iroqlarni tekshiring: Noma'lum jo'natuvchilarning havolalariga yoki biriktirishlariga ishonmang. Hatto ular qonuniy tashkilotlaridan bo'lsa ham, ehtiyot bo'ling.",
+    "Yuboruvchi qonuniyligini tekshiring: Agar elektron pochta yoki xabar mazmuniga ishonchingiz kam bo'lsa, to'g'ri deb bilgan telefon raqami kabi ishonchli aloqa kanalidan noma'lum jo'natuvchi bilan bog'laning. Shubhali xabarda ko'rsatilgan aloqa ma'lumotlaridan foydalanmang.",
+    "Kuchli parollardan va ko'p faktorli autentifikatsiyadan foydalaning: Onlayn hisoblar uchun kuchli, noyob parollardan foydalaning va iloji boricha ko'p faktorli autentifikatsiyani (KFA) yoqing. KFA faqat parolingizdan tashqari barmoq izi, yuz skaneri yoki 1 martalik parollar orqali ikkinchi tekshirish bosqichini talab qilib, qoʻshimcha xavfsizlik qatlamini qoʻshadi.",
+    "Dasturiy ta'minotni yangilab turing: Fishing urinishlaridan foydalanishi mumkin bo'lgan zaifliklarni tuzatish uchun operatsion tizimingizni, veb-brauzeringizni va xavfsizlik dasturlarini muntazam yangilab turing.",
+    "Shaxsiy ma'lumotlaringizni cheklab turish: Internetda va telefon orqali shaxsiy ma'lumotlaringizni uzatishda ehtiyot bo'ling. Qonuniy kompaniyalar nomaqbul elektron pochta xabarlari, SMS xabarlar yoki qo'ng'iroqlar orqali maxfiy ma'lumotlarni so'ramaydi.",
+    "Veb-saytlar domeniga e'tiborli bo'ling: Masalan, microsoft.com va rnicrosoft.com bir qarashda, lekin umuman boshqa saytlar domeni. Faqat 1-si haqiqiy Microsoft kompaniyasi sayti."
+  ],
+  "phishingPrevention": "Fishingni oldini olish:",
+  "phishingPreventionDetails": [
+    "Fishing hujumlari qanday oldin olinadi?",
+    "Elektron pochta, SMS va qo'ng'iroqlarni tekshiring: Noma'lum jo'natuvchilarning havolalariga yoki biriktirishlariga ishonmang. Hatto ular qonuniy tashkilotlaridan bo'lsa ham, ehtiyot bo'ling.",
+    "Yuboruvchi qonuniyligini tekshiring: Agar elektron pochta yoki xabar mazmuniga ishonchingiz kam bo'lsa, to'g'ri deb bilgan telefon raqami kabi ishonchli aloqa kanalidan noma'lum jo'natuvchi bilan bog'laning. Shubhali xabarda ko'rsatilgan aloqa ma'lumotlaridan foydalanmang.",
+    "Kuchli parollardan va ko'p faktorli autentifikatsiyadan foydalaning: Onlayn hisoblar uchun kuchli, noyob parollardan foydalaning va iloji boricha ko'p faktorli autentifikatsiyani (KFA) yoqing. KFA faqat parolingizdan tashqari barmoq izi, yuz skaneri yoki 1 martalik parollar orqali ikkinchi tekshirish bosqichini talab qilib, qoʻshimcha xavfsizlik qatlamini qoʻshadi.",
+    "Dasturiy ta'minotni yangilab turing: Fishing urinishlaridan foydalanishi mumkin bo'lgan zaifliklarni tuzatish uchun operatsion tizimingizni, veb-brauzeringizni va xavfsizlik dasturlarini muntazam yangilab turing.",
+    "Shaxsiy ma'lumotlaringizni cheklab turish: Internetda va telefon orqali shaxsiy ma'lumotlaringizni uzatishda ehtiyot bo'ling. Qonuniy kompaniyalar nomaqbul elektron pochta xabarlari, SMS xabarlar yoki qo'ng'iroqlar orqali maxfiy ma'lumotlarni so'ramaydi.",
+    "Veb-saytlar domeniga e'tiborli bo'ling: Masalan, microsoft.com va rnicrosoft.com bir qarashda, lekin umuman boshqa saytlar domeni. Faqat 1-si haqiqiy Microsoft kompaniyasi sayti."
+  ],
+  "centeredText": "Afsuski, fishing hujumlaridan to'liq himoyalanish qilish juda qiyin. Hujumchilar doimiy ravishda o'z taktikalarini rivojlantirmoqdalar, hatto eng oxirgi texnologiyani biladigan odamlar ham aqlli tarzda yaratilgan firibgarlikka aldanib qolishlari mumkin. Biroq, eng so'nggi phishing taktikalaridan xabardor bo'lish sizning hujumlarga qarshi turishingizda yordam beradi. Bizning veb sahifamiz bunda sizga yordam beradi. Sahifamizga tashrif buyuring va eng oxirgi yangiliklardan xabardor bo'ling.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "ransomwareWhat": "Ransomware nima?",
+  "ransomwareText": "Ransomware yozuvlarni shifrlaydigan va ularni garovda ushlab turadigan kiber hujum turi. Hamyoning fayllarini shifrlanganini olish uchun hamyonlar, fayllarni qaytarish uchun shifrlash kalitini taqdim etish uchun to'lov talab qiladi.",
+  "ransomwareTypes": "Ransomware turlari:",
+  "cryptoRansomware": "Kripto-Ransomware",
+  "cryptoRansomwareDetails": "Bu eng ko'p tarqalgan turi. U jabrlanuvchining fayllarini shifrlaydi va ularni shifrni hal qilish kalitisiz qiladi.",
+  "lockerRansomware": "Locker Ransomware",
+  "lockerRansomwareDetails": "Ushbu turi fayllarni shifrlamaydi, lekin butun tizim yoki qurilma kirishini cheklab turadi, foydalanuvchini tizimga kirishga to'sqinlik qiladi.",
+  "doxwareLeakware": "Doxware/Leakware",
+  "doxwareLeakwareDetails": "Bu variant, agar to'lov to'lanmasa, jabrlanuvchining o'g'irlangan ma'lumotlarini ochiq manbalarga yoki aniq shaxslarga oshkor qilish bilan tahdid qiladi.",
+  "ransomwareAsAService": "RaaS (Ransomware xizmat sifatida)",
+  "ransomwareAsAServiceDetails": "Ushbu model kiber jinoyatchilarga boshqa jinoyatchilardan to'lov vositalari va infratuzilmalariga kirishni ijaraga olish orqali ransomware hujumlarini boshlash imkonini beradi.",
+  "ransomwarePrinciple": "Ishlash prinsipi:",
+  "ransomwarePrincipleDetails": "Ransomware tajovuzkorlari turli xil taktikalardan foydalanishadi, bu ularning zararli dasturlarini o'zlarining tizimlariga joylashtirish uchun.",
+  "phishingEmails": "Phishing elektron pochta xabarlari",
+  "phishingEmailsDetails": "Qurbonlar zararli elektron pochta qoʻshimchalari ustidan bosing yoki g'ayratli elektron pochta xabarlari ichida joylashtirilgan havolalarga bosing, ransomware ularning tizimlariga yuklab olinadi.",
+  "exploitingSoftwareVulnerabilities": "Dasturlarning zaifliklaridan foydalanish",
+  "exploitingSoftwareVulnerabilitiesDetails": "Hamyonlar operatsion tizimlar, dasturlar yoki proshivkalarning ruxsatsiz kirish uchun patchlanmagan zaifliklaridan foydalanishadi.",
+  "maliciousWebsites": "Zararli veb-saytlar",
+  "maliciousWebsitesDetails": "Qurbon guruhlari buzilgan veb-saytlarga tashrif buyurishga yo'naltiriladi. Foydalanuvchi buzilgan veb-saytga tashrif buyuradiganida, ularning tizimi ransomware hujumlari uchun oqilona bo'lib qoladi.",
+  "maliciousAdvertisements": "Zararli reklamalar",
+  "maliciousAdvertisementsDetails": "Bosilganda to'lov dasturini o'rnatib beruvchi buzilgan onlayn reklamalar.",
+  "socialEngineering": "Ijtimoiy muhandislik",
+  "socialEngineeringDetails": "Qurbonlarni ransomware yuklab olishga yoki ularning tizimlariga kirish huquqini berish uchun aldashga urinishlar.",
+  "defenseRansomware": "Ransomware hujumlari ustidan himoya qilish:",
+  "regularBackups": "Muntazam zahira nusxalari:",
+  "regularBackupsDetails": "Ma'lumotlaringizni ajratmasdan muntazam zaxira nusxalari oling, ularni ajratilgan, oflayn qurilmalarda saqlang. Bu, hamma fayllaringiz ransomware tomonidan shifrlansa ham, ularni tiklash imkonini beradi.",
+  "updateSoftware": "Dasturlarni va operatsion tizimlarni yangilang:",
+  "updateSoftwareDetails": "Dasturlarni va operatsion tizimlarni muntazam yangilash ransomware dan himoya qiladi. Yangilanishlarni amalga oshirishda, eng so'nggi xavfsizlik yamolari bilan ishlashni ta'minlang. Bu, kiberjinoyatchilar uchun dasturingizning zaifliklaridan foydalanishni qiyinlashtiradi.",
+  "avoidSuspiciousEmails": "Shubhali elektron pochta biriktirmalarini ochmang:",
+  "avoidSuspiciousEmailsDetails": "Qabul qilinmagan qo'shimchalar bilan aloqada ehtiyot bo'ling. Agar siz kimsadan kutgan qo'shimchani kutmasangiz, uni ochmang. Ransomware hamyonlari, odamlarga zararli qo'shimchalarini yetkazish uchun elektron pochta qo'shimchalardan foydalanadi.",
+  "useSecuritySoftware": "Xavfsizlik dasturlaridan foydalaning:",
+  "useSecuritySoftwareDetails": "Ishonchli anti-malware va antivirus dasturlardan foydalaning, ransomware xavflarini aniqlab chiqish va bloklash uchun.",
+  "useCautionWithUSBDrives": "Noma'lum USB flesh-disklardan foydalanishdan saqlang:",
+  "useCautionWithUSBDrivesDetails": "Agar USB flesh-diskning qayerdan kelganini bilmaysiz, undan hech qachon kompyuteringizga ulamang. Kiberjinoyatchilar nusxalangan USB flesh-disklarni tashqarida qoldiradilar, umid qilishlarini kutadilar, ularni qo'llab-quvvatlayadilar.",
+  "downloadOnlyFromTrustedSources": "Faqat ishonchli manbalardan yuklab oling:",
+  "downloadOnlyFromTrustedSourcesDetails": "Ransomware yuklab olishning xavfini kamaytirish uchun hech qachon noaniq saytlardan dasturiy ta'minot yoki media fayllarini yuklab olmang. To'g'ri va ishonchli manbalardan foydalaning. Ushbu turdagi veb-saytlar ishonch muhrlari bilan tan olinishi mumkin. Siz tashrif buyurayotgan sahifaning brauzer manzil qatori 'http' oʻrniga 'https' ishlatilganligini va manzil qatoriida qulf belgisi yoki shild ko'rsatilganligini tekshiring. Mobil qurilmangizga biror narsani yuklab olayotganda ham ehtiyot bo'ling. Qurilmangizga qarab Google Play do'koniga yoki Apple App Store do'koniga ishonishingiz mumkin.",
+  "useVPNOnPublicWiFi": "Umumiy Wi-Fi tarmoqlarida VPN xizmatlaridan foydalaning:",
+  "useVPNOnPublicWiFiDetails": "Umumiy Wi-Fi tarmoqlaridan mas'ul foydalanish ransomware hujumlari ga qarshi himoya qo'yiqlar hisoblanadi. Umumiy Wi-Fi tarmog'idan foydalanganda, kompyuteringizga hujumlarga ko'proq moyil bo'lishi mumkin. Maxfiy tranzaksiyalar uchun umumiy Wi-Fi dan foydalanmang yoki himoyalangan VPN xizmatidan foydalaning.",
+  "guardAgainstDataLeakage": "Ma'lumotlarning oshkor qilishiga qarshi himoya qilish:",
+  "guardAgainstDataLeakageDetails": "Telefon qo'ng'iroqlari, matnli xabarlar yoki elektron pochta xabarlaridan shaxsiy ma'lumotlarni so'rab qo'ng'iroq qilishdan saqlang. Ransomware hujumlari rejalashtirayotgan kiberjinoyatchilar oldindan shaxsiy ma'lumotlarni olishga harakat qilishlari mumkin, keyinchalik ularni sizga moslashtirish uchun fission xabarlari yaratishadi. Xabarning qonuniy ekanligiga shubha qilsangiz, to'g'ridan-to'g'ri jo'natuvchi bilan bog'laning.",
+  "avoidClickingUnsafeLinks": "Xavfsiz havolalarni bosishdan saqlaning:",
+  "avoidClickingUnsafeLinksDetails": "Spam elektron pochtalardagi yoki noaniq veb-saytlardagi havolalarni bosishda ehtiyot bo'ling. Zararli havolalarni bosish avtomatik yuklab olishni boshlay oladi, kompyuteringizga zarar yetkazishi mumkin.",
+  "strengthenDefenseDifficult": "Ransomware hujumlari ustidan to'liq himoya qilish juda qiyin.",
+  "strengthenDefenseConstantly": "Hamyonlar doimiy ravishda taktikalarini rivojlantirishadi, bu esa so'nggi texnologiyalar bilan yaxshi bilganlarning ham to'liq himoyalanganligini ta'minlashga qiyinlik yaratadi.",
+  "strengthenDefenseAwareness": "Biroq, yuqoridagi strategiyalarni amalga oshirish orqali siz qurbon bo'lish ehtimolini sezilarli darajada kamaytirishingiz va hujumlar ga qarshi qo'l ko'rsatingiz mumkin.",
+  "additionalConsiderations": "Qo'shimcha ko'rsatmalar",
+  "additionalConsiderationsTips": {
+    "ImportanceOfIncidentResponsePlans": "Baxtsiz hodisalarga javob berish rejalarining ahamiyati: to'lov dasturi hujumiga javob berish rejasiga ega bo'lish zararni minimallashtirish va tiklanishni tezlashtirishi mumkin.",
+    "ReportingToLawEnforcement": "Huquqni muhofaza qilish organlarining roli: har doim to'lov dasturi hujumlari haqida huquqni muhofaza qilish organlariga xabar bering. Bu ularga tajovuzkorlarni kuzatishga va ushbu tahdidlarga qarshi kurashish strategiyalarini ishlab chiqishga yordam beradi."
+  },
+
+
+
+
+
+
+
+
+
+
+    "DoSDDoSTitle": "DoS va DDoS hujumlari",
+    "DoSDDoSText": "Xizmatni rad etish (DoS) va tarqatilgan xizmat ko‘rsatishni rad etish (DDoS) hujumlari veb-sayt, server yoki tarmoqni so‘rovlar oqimi bilan to‘ldirib, qonuniy foydalanuvchilar uchun foydalana olmaydigan qilib qo‘yishga qaratilgan.",
+    "DoSDescription": "DoS (Xizmatni rad etish): Bitta tajovuzkorning qurilmasi maqsadli tizimni ortiqcha trafik bilan to'ldiradi, resurslarni sarflaydi va qonuniy foydalanuvchilarning unga kirishiga to'sqinlik qiladi. Tasavvur qiling, bitta odam eshikni ulkan narsa bilan to'sib, boshqalarni kirishiga to'sqinlik qilmoqda.",
+    "DDoSDescription": "DDoS (Distributed Denial-of-Service): Bir vaqtning o'zida nishonga bir nechta buzilgan qurilmalar bilan (ko'pincha botnet) hujum qilish. Eshikni to'sib qo'ygan butun bir olomonni o'ylab ko'ring, bu deyarli hech kimning o'tishiga yo'l qo'ymaydi.",
+    "DoSDDoSEffect": "DoS va DDoS hujumlarining ta'siri:",
+    "DoSDDoSEffectPoints": [
+    "To'xtash vaqti: veb-saytlar yoki xizmatlar foydalanuvchilar uchun mavjud bo'lmaydii, bu daromadning yo'qolishiga olib keladi.",
+    "Obro'ga putur etkazish: Tez-tez hujumlar tashkilot obro'siga putur yetkazishi va foydalanuvchilarning ishonchini yo'qotishi mumkin."
+    ],
+    "DoSDDoSDefense": "DoS vs DDoS oldini olish usullari:",
+    "DoSDDoSDefensePoints": [
+    "Hujum sirtini kamaytirish: Hujum yuzasiga ta'sir qilishni cheklash DDoS hujumining ta'sirini kamaytirishga yordam beradi. Ushbu ta'sirni kamaytirishning bir necha usullari orasida ma'lum joylarga trafikni cheklash, yuk balansini qo'llash va eskirgan yoki foydalanilmagan portlar, protokollar va ilovalardan aloqani blokirovka qilish kiradi.",
+    "Anycast: Anycast tarmog'i tashkilot tarmog'ining sirt maydonini ko'paytirishga yordam beradi, shuning uchun u bir nechta taqsimlangan serverlar bo'ylab trafikni tarqatish orqali hajmli trafik ko'tarilishini (va uzilishlarning oldini oladi) osonroq qabul qilishi mumkin.",
+    "Haqiqiy vaqtda, moslashtirilgan tahdid monitoringi: Jurnal monitoringi tarmoq trafigini tahlil qilish, trafik ko'tarilishini yoki boshqa noodatiy faoliyatni kuzatish va anomal yoki zararli so'rovlar, protokollar va IP bloklardan himoyalanish uchun moslashish orqali potentsial tahdidlarni aniqlashga yordam beradi.",
+    "Keshlash: Kesh so'ralgan kontentning nusxalarini saqlaydi, shunda kamroq so'rovlar kelib chiqish serverlari tomonidan xizmat qiladi. Resurslarni keshlash uchun kontentni etkazib berish tarmog'idan (CDN) foydalanish tashkilot serverlaridagi yukni kamaytirishi va ularning qonuniy va zararli so'rovlar bilan ortiqcha yuklanishini qiyinlashtirishi mumkin."
+    ],
+    "DoSDDoSDefenseTools": "DoS va DDoS oldini olish vositalari:",
+    "DoSDDoSDefenseToolsPoints": [
+    "Veb-ilovalar xavfsizlik devori (WAF): WAF veb-ilovalar va Internet o'rtasidagi zararli HTTP trafigini filtrlash, tekshirish va blokirovka qilish uchun moslashtirilgan siyosatlar yordamida hujumlarni blokirovka qilishga yordam beradi. WAF yordamida tashkilotlar ma'lum joylar va IP manzillardan kiruvchi trafikni boshqaradigan ijobiy va salbiy xavfsizlik modelini qo'llashlari mumkin.",
+    "Doimiy DDoS yumshatish: DDoS yumshatish provayderi tarmoq trafigini doimiy ravishda tahlil qilish, paydo bo'layotgan hujum shakllariga javoban siyosat o'zgarishlarini amalga oshirish va ma'lumotlar markazlarining keng va ishonchli tarmog'ini ta'minlash orqali DDoS hujumlarining oldini olishga yordam beradi. Bulutli DDoS yumshatish xizmatlarini baholashda murakkab va hajmli hujumlardan moslashuvchan, kengaytiriladigan va har doim ochiq tahdiddan himoyani taklif qiluvchi provayderni qidiring."
+    ],
+    "DosDDosDefenseDifficult": "DoS va DDoS hujumlaridan to'liq himoya qilish juda qiyin.",
+    "DosDDosDefenseConstantly": "Hujumchilar doimiy ravishda yangi usullarni ishlab chiqmoqdalar va hatto murakkab himoyaga ega yirik tashkilotlar ham nishonga olinishi mumkin. Mana nima uchun to'liq himoyaga erishish qiyin:",
+    "DosDDosDefenseTactics": [
+    "Rivojlanayotgan taktikalar: Hujumchilar doimiy ravishda mavjud mudofaalardan qochish uchun yangi usullarni ishlab chiqadilar va ishlab chiqadilar. So'nggi hujum tendentsiyalaridan xabardor bo'lish va mudofaangizni shunga mos ravishda moslashtirish doimiy jarayondir.",
+    "DDoS hujumlarining taqsimlangan tabiati: DDoS hujumlari bir nechta buzilgan qurilmalardan foydalanadi, bu hujumni manbasini aniqlash va blokirovka qilishni qiyinlashtiradi. Bitta tajovuzkordan farqli o'laroq, minglab buzilgan qurilmalarga ega botnet geografik jihatdan tarqalishi mumkin, bu esa hujumni izolyatsiya qilish va yumshatishni qiyinlashtiradi.",
+    "Resurs cheklovlari: DDoS hujumining to'liq oldini olish juda katta trafik hajmini boshqarish uchun katta resurslarni talab qilishi mumkin. Kichikroq tashkilotlar uchun bunday keng qamrovli himoyaga sarmoya kiritish amaliy yoki iqtisodiy jihatdan samarali bo'lmasligi mumkin."
+    ],
+
+
+
+    
+
+
+
+
+      "mitmTitle": "O'rtadagi odam (MitM) hujumlari",
+      "mitmText": "O'rtadagi odam (MitM) hujumi bu kiberhujum bo'lib, tajovuzkor ikki tomon o'rtasidagi aloqaga yashirincha kiradi. Keyin tajovuzkor suhbatni tinglashi, ma'lumotlarni ushlab turishi va hatto jabrlanuvchi va qonuniy qabul qiluvchi o'rtasidagi ma'lumotlarni o'zgartirishi mumkin. Tasavvur qiling-a, siz do'stingiz bilan yashirin suhbat quryapsiz, lekin chaqirilmagan tinglovchi o'rtaga yashirinib kiradi va siz aytgan hamma narsani eshitadi.",
+      "mitmMethods": "MitM hujumlari qanday ishlaydi:",
+      "mitmMethodsDetails": [
+        "Hujumchi joylashuvi: tajovuzkor o'zini jabrlanuvchi va mo'ljallangan oluvchi o'rtasida joylashtiradi. Bunga turli usullar yordamida erishish mumkin, masalan:",
+        "Tinglash va buzish: Tajovuzkor jabrlanuvchi va qabul qiluvchi o'rtasidagi muloqotni tinglashi mumkin. Bu tizimga kirish ma'lumotlari, kredit karta ma'lumotlari yoki shaxsiy xabarlar kabi nozik ma'lumotlarni o'z ichiga olishi mumkin. Ba'zi hollarda, tajovuzkor hatto almashilayotgan ma'lumotlarni o'zgartirib, suhbatni manipulyatsiya qilishi mumkin."
+      ],
+      "mitmTypes": "MitM hujumlarining turlari:",
+      "mitmTypesDetails": [
+        "Seansni o'g'irlash: Buzg'unchi jabrlanuvchi va qonuniy veb-sayt yoki xizmat o'rtasidagi mavjud aloqa seansini o'zlashtiradi.",
+        "SSL o'chirish: Buzg'unchi xavfsiz HTTPS ulanishini xavfsiz bo'lmagan HTTP ulanishiga tushirib, shifrlanmagan ma'lumotlarni olish imkonini qo'lga kiritadi.",
+        "Veb-keshni zararlash: tajovuzkor veb-keshga zararli kodni kiritadi, keyinchalik u ma'lum bir veb-saytga tashrif buyurgan qurbonlarga qarshi xizmat qilishi mumkin."
+      ],
+      "mitmImpact": "MitM hujumlarining ta'siri:",
+      "mitmImpactDetails": [
+        "Ma'lumotlarni o'g'irlash: foydalanuvchi nomlari, parollar, kredit karta ma'lumotlari va xabarlar kabi nozik ma'lumotlar o'g'irlanishi mumkin.",
+        "Shaxsni o'g'irlash: O'g'irlangan hisob ma'lumotlari jabrlanuvchiga taqlid qilish va ularning hisoblari yoki manbalariga kirish uchun ishlatilishi mumkin.",
+        "Moliyaviy yo'qotish: MitM hujumlari orqali olingan moliyaviy ma'lumotlar soxta xaridlar uchun ishlatilishi mumkin."
+      ],
+      "mitmProtectionTitle": "Ma'lumotlaringizni himoya qilish: O'rtadagi odam (MitM) hujumlaridan himoya qilish usullari",
+"mitmProtectionText": "Man-in-the-Middle (MitM) hujumlari sizning onlayn xavfsizligingizga jiddiy tahdid soladi. O'zingizni himoya qilish uchun qo'llashingiz mumkin bo'lgan ba'zi asosiy strategiyalar:",
+"secureConnectionAdvantage": "Xavfsiz ulanishlarga ustunlik berish:",
+"secureConnectionAdvantageDetails": [
+"Hamma joyda HTTPS: Veb-saytga biron bir nozik ma'lumotni kiritishdan oldin har doim brauzeringizning manzil satrida https indikatori va qulf belgisini qidiring. HTTPS shifrlash bilan xavfsiz ulanishni bildiradi, bu esa tajovuzkorlarning sizning muloqotingizni tinglashini ancha qiyinlashtiradi.",
+"Umumiy Wi-Fi tarmog'idan ehtiyot bo'ling: Umumiy Wi-Fi tarmoqlari xavfsiz emas. Onlayn banking, parollarni kiritish yoki onlayn xaridlarni amalga oshirish kabi nozik harakatlar uchun ulardan foydalanishdan saqlaning. Agar siz umumiy Wi-Fi tarmog'idan foydalanishingiz kerak bo'lsa, trafikni shifrlash va qurilmangiz va internet o'rtasida xavfsiz tunnel yaratish uchun VPN (Virtual Private Network) dan foydalanishni o'ylab ko'ring.",
+"Uy tarmog'ingizni himoyalang: Wi-Fi tarmog'ingiz uchun kuchli paroldan foydalaning va uy tarmog'ingizni ruxsatsiz kirishdan himoya qilish uchun WPA2 shifrlashni (yoki mavjud bo'lsa WPA3) yoqing. Routeringizdagi dasturiy ta'minotni muntazam yangilab turing."
+],
+"strongAuthenticationMeasures": "Kuchli autentifikatsiya choralari:",
+"strongAuthenticationMeasuresDetails": [
+"Kuchli va noyob parollar: Barcha onlayn hisoblaringiz uchun har doim kuchli, noyob parollardan foydalaning. Bir nechta hisoblar uchun osongina taxmin qilinadigan parollardan yoki bir xil paroldan foydalanishdan saqlaning. Kuchli parollarni xavfsiz yaratish va saqlash uchun parol menejeridan foydalanishni o'ylab ko'ring.",
+"Ko'p faktorli autentifikatsiya (KFA): Iloji boricha ko'p faktorli autentifikatsiyani (KFA) yoqing. Bu paroldan tashqari ikkinchi tekshirish bosqichini talab qilish orqali qo'shimcha xavfsizlik darajasini oshiradi. Bunga qo'shimcha kod kiritish yoki barmoq izi skaneridan foydalanish kiradi."
+],
+"securitySoftwareAndAwareness": "Xavfsizlik dasturi va xabardorlik:",
+"securitySoftwareAndAwarenessDetails": [
+"Yangilangan dasturiy ta'minot: Barcha qurilmalaringizdagi operatsion tizimingiz, ilovalaringiz va proshivkangizni so'nggi xavfsizlik yamoqlari bilan yangilab turing. Ushbu yamoqlar ko'pincha tajovuzkorlar MitM hujumlarini boshlash uchun foydalanadigan zaifliklarni bartaraf etadi.",
+"Xavfsizlik Dasturi: Zararli dasturlarga va fishingga qarshi xususiyatlarga ega xavfsizlik dasturidan foydalanishni o'ylab ko'ring. Bular MitM hujumlarida ishlatilishi mumkin bo'lgan zararli veb-saytlar yoki dasturlarni aniqlash va blokirovka qilishga yordam beradi.",
+"Fishingdan xabardorlik: Sizni zararli havolalarni bosish yoki qo'shimchalarni yuklab olish uchun aldashga urinayotgan shubhali elektron pochta xabarlari, matnli xabarlar yoki ijtimoiy media xabarlaridan ehtiyot bo'ling. Ushbu taktikalar MitM hujumlarini osonlashtiradigan zararli dasturlarni o'rnatish uchun ishlatilishi mumkin. Noto'g'ri yozilgan URL manzillar, grammatik xatolar yoki shoshilinchlik hissi kabi fishing urinishlarini aniqlashni o'rganing."
+],
+"additionalRecommendations": "Qo'shimcha tavsiyalar:",
+"additionalRecommendationsDetails": [
+"Umumiy qurilmalardagi virtual klaviatura: Umumiy kompyuterlardan foydalanganda parollar kabi nozik maʼlumotlarni kiritish uchun ekranda virtual klaviaturadan foydalanishni oʻylab koʻring. Bu zararli dasturiy ta'minot sizning tugmalar bosishlaringizni ushlab qolishining oldini olishga yordam beradi.",
+"Bepul yoki buzilgan dasturlardan ehtiyot bo'ling: dasturiy ta'minotni faqat ishonchli manbalardan yuklab oling. Bepul yoki buzilgan dasturlarni yuklab olishdan saqlaning, chunki ular MitM hujumlarida ishlatilishi mumkin bo'lgan zararli dasturlar bilan birga bo'lishi mumkin."
+],
+"mitmProtectionConclusion": "Ushbu strategiyalarni amalga oshirish va hushyorlikni saqlab qolish orqali siz MitM hujumlari qurboni bo'lish xavfini sezilarli darajada kamaytirishingiz va shaxsiy ma'lumotlaringizni onlayn himoya qilishingiz mumkin.",
+
+
+
+
+
+
+"homeDisplay": "Asosiy",
+"statisticsDisplay": "Statistika",
+"resourcesDisplay": "Resurslar",
+
+
+
+
+
+
+  "footerDescription": "Afsuski, kiberhujumlardan to'liq himoyalanish juda qiyin. Hujumchilar doimiy ravishda o'z taktikalarini rivojlantirmoqdalar. Biroq, eng so'nggi kiber taktikalardan xabardor bo'lish sizning hujumlarga qarshi turishingizda yordam beradi. Bizning veb sahifamiz bunda sizga yordam beradi",
+  "footerEmail": "Email: ",
+  "footerPhone": "Phone: ",
+  "footerLocation": "Manzil: Xonqa, Xorazm, O'zbekiston",
+  "footerContact": "Biz bilan bog'lanish",
+  "namePlaceholder": "Ism",
+  "emailPlaceholder": "Email manzilingiz",
+  "messagePlaceholder": "Xabar",
+  "submit": "Jo'natish",
+
+
+
+
+
+    "servicesTitle": "Eng ko'p uchraydigan hujumlar",
+    "phishing": "Fishing",
+    "phishingDesc": "Fishing elektron aloqada ishonchli shaxs sifatida niqoblanib, parollar, kredit karta raqamlari yoki shaxsiy ma'lumotlarni o'g'irlash.",
+    "ransomware": "Ransomware",
+    "ransomwareDesc": "Pul summasi ('to'lov') to'lanmaguncha kompyuter tizimi yoki fayllarga kirishni bloklash uchun mo'ljallangan zararli dastur turi.",
+    "denyService": "Xizmatni rad etish",
+    "denyServiceDesc": "DoS va DDoS hujumlari kompyuter tizimi, tarmoq yoki saytni trafik oqimi bilan to'ldirish orqali normal ishlashini buzishga qaratilgan.",
+    "manInTheMiddle": "O'rtadagi odam (Man-in-the-Middle)",
+    "manInTheMiddleDesc": "O'rtadagi odam hujumlari tajovuzkor ikki tomon o'rtasida aloqani to'xtatganda va potensial ravishda o'zgartirganda sodir bo'ladi.",
+    "sqlInjection": "SQL Inyeksiya",
+    "sqlInjectionDesc": "SQL Inyeksiya - bu kirish maydonlariga zararli SQL kodini kiritish orqali veb-ilovalarga qaratilgan kiberhujum turi.",
+    "zeroDay": "Nolinchi kun",
+    "zeroDayDesc": "Nolinchi kun hujumi sotuvchi yoki jamoatchilikka hali ma'lum bo'lmagan dasturiy yoki apparatdagi zaifliklarga qaratilgan.",
+    "more": "Ko'proq",
+
+
+
+
+
+    "home": "Tahdidlarnini oldini olish usullarini o'rgatishga bag'ishlangan saytimizga xush kelibsiz! Biz shaxslar va tashkilotlarni kibertahdidlar keltirib chiqaradigan xavflarni qanday aniqlash va kamaytirish bo'yicha o'rgatish niyatidamiz"
+  
+
+
+
+
+
+
+
+
+
+    
+        
+}
+    
+
+
+
+
+
+

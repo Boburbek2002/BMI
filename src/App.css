@@ -80,3 +80,176 @@ strong {
 }
 
 
+/* App.css */
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a0dab;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #8ab4f8;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.menu .nav__item .nav__active {
+  font-weight: bold;
+  color: var(--link-color);
+}
+
+/* Add any additional styles as needed */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.menu .nav__item .nav__active {
+  font-weight: bold;
+  color: var(--link-color);
+}
+
+/* Ensure other text elements use the --text-color variable */
+h1, h2, h3, h4, h5, h6, p, li, a {
+  color: var(--text-color);
+}
+
+
+/* App.css */
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a0dab;
+  --card-bg-color: #ffffff;
+  --card-text-color: #000000;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #8ab4f8;
+  --card-bg-color: #1f1f1f;
+  --card-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Card styles */
+.card-body {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+}
+
+/* Additional styles for header, navigation, etc. */
+.header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.menu .nav__item a {
+  color: var(--text-color);
+}
+
+.menu .nav__item a.nav__active {
+  font-weight: bold;
+  color: var(--link-color);
+}
+
+
+.theme-toggle {
+  cursor: pointer;
+  
+}
+
+/* App.css */
+body.day {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a0dab;
+  --card-bg-color: #ffffff;
+  --card-text-color: #000000;
+  --toggle-bg-color: #f8f9fa;
+  --toggle-text-color: #000000;
+  --about-text-color: #ffffff; /* Corrected variable name */
+}
+
+body.night {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #8ab4f8;
+  --card-bg-color: #1f1f1f;
+  --card-text-color: #ffffff;
+  --toggle-bg-color: #333333;
+  --toggle-text-color: #ffffff;
+  --about-text-color: #ffffff;
+}
+
+.about {
+  color: var(--about-text-color); /* Updated to match the correct variable name */
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.language-switcher {
+  background-color: var(--toggle-bg-color);
+  color: var(--toggle-text-color);
+  cursor: pointer;
+}
+
+.card-body {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+}
+
+.header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.menu .nav__item a {
+  color: var(--text-color);
+}
+
+.menu .nav__item a.nav__active {
+  font-weight: bold;
+  color: var(--link-color);
+}
+
+
+.about {
+  color: white; /* Set the text color to white */
+}

@@ -1,0 +1,28 @@
+/* src/components/LanguageSwitcher.css */
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .language-switcher select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+  }
+
+  .language-switcher {
+    background-color: var(--toggle-bg-color); /* Set background color based on theme */
+    color: var(--toggle-text-color); /* Set text color based on theme */
+    cursor: pointer;
+  }
+  
+  body.night .language-switcher {
+    background-color: #333333; /* Set black background color in night mode */
+    color: #ffffff; /* Set white text color in night mode */
+  }
+  
+  

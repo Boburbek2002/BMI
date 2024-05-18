@@ -9,6 +9,7 @@ import Thread3 from "../pages/Thread3";
 import Thread4 from "../pages/Thread4";
 import Thread5 from "../pages/Thread5";
 import Thread6 from "../pages/Thread6";
+import '../App.css'
 
 const Routers = () => {
   return (

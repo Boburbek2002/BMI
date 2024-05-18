@@ -1,25 +1,30 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./header.css";
 import logo from "./../../assets/images/Logo.png";
+import LanguageSwitcher from "../LanguageSwitcher";
+import '../../App.css'
 
 const nav__links = [
   {
     path: "home",
-    display: "About",
+    displayKey: "homeDisplay",
   },
   {
     path: "statistics",
-    display: "Statistika",
+    displayKey: "statisticsDisplay",
   },
   {
     path: "resurses",
-    display: "Resurslar",
+    displayKey: "resourcesDisplay",
   },
 ];
 
-const Header = () => {
+const Header = ({ toggleTheme, theme }) => {
+  const { t } = useTranslation();
+
   return (
     <header className="header">
       <Container>
@@ -33,18 +38,14 @@ const Header = () => {
               <ul className="menu">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <NavLink
-                      to={item.path}
-                      className={(navClass) =>
-                        navClass.isActive ? "nav__active" : ""
-                      }
-                    >
-                      {item.display}
+                    <NavLink to={item.path} activeClassName="nav__active">
+                      {t(item.displayKey)}
                     </NavLink>
                   </li>
                 ))}
               </ul>
             </div>
+            <LanguageSwitcher />
           </div>
         </Row>
       </Container>

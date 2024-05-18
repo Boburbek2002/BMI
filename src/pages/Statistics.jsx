@@ -6,7 +6,7 @@ import ddosstatistics from './../assets/images/ddosstatistics.png'
 import iotstatistics from './../assets/images/iotstatistics.png'
 import iotstatistics2 from './../assets/images/iotstatistics2.png'
 import crimeprice from './../assets/images/crimeprice.png'
-
+import '../App.css'
 
 
 
@@ -70,7 +70,7 @@ const Statistics = () => {
       </li>
      </ul>
 
-     <div><img src={ransomstatistics} alt="Description of the image" /></div>
+     <div><img src={ransomstatistics} alt="ransomstatistics" /></div>
 
      <center>Chorak bo'yicha to'lovlar</center>
     <br/>
@@ -79,7 +79,7 @@ const Statistics = () => {
     2023-yilda ransomware Germaniya, Saudiya Arabistoni va Xitoydagi korxonalarga eng og‘ir zarba berdi.
     </p>
 
-    <div><img src={ransomstatistics2} alt="Description of the image" /></div>
+    <div><img src={ransomstatistics2} alt="ransomstatistics2" /></div>
 
     <center>
     So'nggi 12 oy ichida to'lov dasturidan jabrlangan tashkilotlarning mamlakatlar bo'yicha foizlari
@@ -132,7 +132,7 @@ const Statistics = () => {
     </ul>
     <br/> <br/>
 
-    <div><img src={ddosstatistics} alt="Description of the image" /></div>
+    <div><img src={ddosstatistics} alt="ddosstatistics" /></div>
 
     <center>
     APWG ning 2023-yil 2-chorak uchun fishing faoliyati tendentsiyalari hisoboti
@@ -165,7 +165,7 @@ const Statistics = () => {
       </li>
     </ul>
 
-    <div><img src={iotstatistics} alt="Description of the image" /></div><br/>
+    <div><img src={iotstatistics} alt="iotstatistics" /></div><br/>
 
     <ul style={{listStyleType: 'disc'}}>
     <li>
@@ -176,7 +176,7 @@ const Statistics = () => {
       </li>
     </ul>
 
-    <div><img src={iotstatistics2} alt="Description of the image" /></div><br/>
+    <div><img src={iotstatistics2} alt="iotstatistics2" /></div><br/>
 
     <strong>
     Kiber jinoyatlar narxi
@@ -190,7 +190,7 @@ const Statistics = () => {
 
     </p>
 
-    <div><img src={crimeprice} alt="Description of the image" /></div>
+    <div><img src={crimeprice} alt="crimeprice" /></div>
 
     <center>Kiberjinoyatning taxminiy o'rtacha zarari (McAfee)</center><br/>
 

@@ -1,0 +1,15 @@
+/* ThemeToggle.css */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: var(--toggle-bg-color);
+    color: var(--toggle-text-color);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
