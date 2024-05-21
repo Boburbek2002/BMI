@@ -238,7 +238,7 @@
     "denyServiceDesc": "DoS va DDoS hujumlari kompyuter tizimi, tarmoq yoki saytni trafik oqimi bilan to'ldirish orqali normal ishlashini buzishga qaratilgan.",
     "manInTheMiddle": "O'rtadagi odam (Man-in-the-Middle)",
     "manInTheMiddleDesc": "O'rtadagi odam hujumlari tajovuzkor ikki tomon o'rtasida aloqani to'xtatganda va potensial ravishda o'zgartirganda sodir bo'ladi.",
-    "sqlInjection": "SQL Inyeksiya",
+    "sqlInjection1": "SQL Inyeksiya",
     "sqlInjectionDesc": "SQL Inyeksiya - bu kirish maydonlariga zararli SQL kodini kiritish orqali veb-ilovalarga qaratilgan kiberhujum turi.",
     "zeroDay": "Nolinchi kun",
     "zeroDayDesc": "Nolinchi kun hujumi sotuvchi yoki jamoatchilikka hali ma'lum bo'lmagan dasturiy yoki apparatdagi zaifliklarga qaratilgan.",
@@ -248,9 +248,304 @@
 
 
 
-    "home": "Tahdidlarnini oldini olish usullarini o'rgatishga bag'ishlangan saytimizga xush kelibsiz! Biz shaxslar va tashkilotlarni kibertahdidlar keltirib chiqaradigan xavflarni qanday aniqlash va kamaytirish bo'yicha o'rgatish niyatidamiz"
+    "home": "Tahdidlarnini oldini olish usullarini o'rgatishga bag'ishlangan saytimizga xush kelibsiz! Biz shaxslar va tashkilotlarni kibertahdidlar keltirib chiqaradigan xavflarni qanday aniqlash va kamaytirish bo'yicha o'rgatish niyatidamiz",
   
 
+
+
+
+
+
+    
+      "sqlInjection": {
+        "title": "SQL Injection: Ma'lumotlar bazasiga hujum",
+        "description": "SQL injection (SQLi) - bu tajovuzkorlar veb-sayt yoki ilovaning ma'lumotlar bazasini manipulyatsiya qilish uchun foydalanadigan muhim veb-xavfsizlik zaifligi. Zararli SQL kodini foydalanuvchi ma'lumotlariga kiritish orqali tajovuzkorlar maxfiy ma'lumotlarga ruxsatsiz kirishlari, ma'lumotlarni o'zgartirishlari yoki o'chirishlari va hattoki ma'lumotlar bazasi serverini nazorat qilishlari mumkin.",
+        "howItWorks": "SQL Injection qanday ishlaydi:",
+        "steps": [
+          "Zaif kirish maydonlari: Veb-saytlar va ilovalarda ko'pincha foydalanuvchilar kirish ma'lumotlari, qidiruv so'rovlari yoki mahsulot sharhlari kabi ma'lumotlarni kiritishlari mumkin bo'lgan shakllar mavjud. Ushbu kiritish maydonlari, agar ular foydalanuvchi kiritishini to'g'ri sanitarizatsiya qilmasa, SQL inyeksiyasiga qarshi himoyasiz bo'lishi mumkin.",
+          "Zararli kodni kiritish: Buzg'unchilar oddiy foydalanuvchi kiritishi sifatida yashiringan zararli SQL kodini ishlab chiqaradilar. Ushbu kod kirish shakllariga, qidirish satrlariga yoki hatto sharh bo'limlariga joylashtirilishi mumkin.",
+          "Ma'lumotlar bazasidan foydalanish: Ilova foydalanuvchi kiritgan ma'lumotlarni qayta ishlaganda, u bilmagan holda ma'lumotlar bazasiga o'rnatilgan SQL kodini bajaradi. Bu hujumchining niyatiga qarab turli oqibatlarga olib kelishi mumkin."
+        ],
+        "types": "SQL inyeksiyasi turlari:",
+        "inBand": "In-band SQL Injection: tajovuzkorning zararli kodi va kerakli natijalar bir xil kanal (masalan, veb-sahifa) orqali olinadi. Bunga ko'pincha ma'lumot olish uchun ma'lumotlar bazasi javoblarini manipulyatsiya qilish orqali erishiladi.",
+        "errorBased": "Xatoga asoslangan SQLi: Buzg'unchi ma'lumotlar bazasidan xato xabarini keltirib chiqaradigan kodni kiritadi va ma'lumotlar bazasi tuzilishi yoki tarkibi haqida ma'lumot beradi.",
+        "unionBased": "Ittifoqqa asoslangan SQLi: Buzg'unchi tajovuzkorning kerakli ma'lumotlarini qonuniy natijalar bilan birlashtirish uchun UNION operatoridan foydalanadigan kodni kiritadi.",
+        "outOfBand": "Tarmoqdan tashqari SQL injection: Buzg'unchining zararli kodi olingan ma'lumotlarni (masalan, o'g'irlangan ma'lumot) tajovuzkor tomonidan boshqariladigan tashqi serverga yuboradi. Bu tarmoq ichidagi hujumlarga nisbatan aniqlashni qiyinlashtiradi.",
+        "blind": "Blind SQL Injection: Buzg'unchi veb-sahifada xato xabarlari yoki ko'rinadigan natijalarni yaratmaydigan kodni kiritadi. Buning o'rniga, tajovuzkor kiritilgan kod muvaffaqiyatli yoki yo'qligini aniqlash uchun ilovaning xatti-harakatlarini (masalan, javob vaqti) kuzatishga tayanadi.",
+        "implementation": "SQL inyeksiyasi qanday amalga oshiriladi",
+        "implementationDescription": "SQL injection (SQLi) tajovuzkorning arsenalidagi kuchli qurol bo'lib, ularga ma'lumotlar bazalarini boshqarish va nozik ma'lumotlarni o'g'irlash imkonini beradi. Bu yerda tajovuzkorlar SQL inyeksion hujumini amalga oshirish uchun qanday qadamlar qo‘yganini batafsil ko‘rib chiqamiz:",
+        "stepsDetailed": [
+          {
+            "title": "1. Maqsadni aniqlash:",
+            "steps": [
+              "Zaifliklarni skanerlash: Buzg'unchilar ko'pincha veb-saytlar va ilovalarni zaifliklarni, shu jumladan SQL inyeksiyasiga moyil bo'lganlarni skanerlash uchun avtomatlashtirilgan vositalardan foydalanadilar.",
+              "Qo'lda sinov: Ba'zi hollarda tajovuzkorlar kirish shakllari, qidiruv paneli yoki boshqa foydalanuvchi kiritish maydonlarini tekshirish orqali zaifliklarni qo'lda tekshirishlari mumkin."
+            ]
+          },
+          {
+            "title": "2. Zararli yukni yaratish:",
+            "steps": [
+              "Ma'lumotlar bazasini tushunish: Buzg'unchilar ko'pincha samarali yukni yaratish uchun ishlatiladigan ma'lumotlar bazasi turi (masalan, MySQL, SQL Server) haqida ma'lum ma'lumotga muhtoj.",
+              "Kodni yaratish: Buzg'unchi oddiy foydalanuvchi kiritishi sifatida yashiringan zararli SQL kodini yaratadi."
+            ]
+          },
+          {
+            "title": "3. Zararli yukni kiritish:",
+            "steps": [
+              "Maqsadli kirish maydonlari: Buzg'unchi foydalanuvchi kiritishini qabul qiladigan veb-sayt shakllari yoki funksiyalarini aniqlaydi. Bu kirish shakli, qidiruv paneli, sharhlar bo'limi yoki dastur foydalanuvchi tomonidan taqdim etilgan ma'lumotlarni qayta ishlaydigan har qanday maydon bo'lishi mumkin.",
+              "Kodga yashirincha kirish: Yaratilgan zararli kod keyinchalik foydalanuvchi kiritish maydoniga kiritiladi."
+            ]
+          },
+          {
+            "title": "4. Zaiflikdan foydalanish:",
+            "steps": [
+              "Ilovani qayta ishlash: Foydalanuvchi shaklni yuborganda yoki manipulyatsiya qilingan veb-sahifa bilan o'zaro aloqada bo'lganda, dastur tajovuzkorning kiritilgan kodini bilmagan holda qayta ishlaydi.",
+              "Ma'lumotlar bazasini manipulyatsiya qilish: Ma'lumotlar bazasi tajovuzkor kodini qonuniy SQL bayonotlari sifatida izohlaydi va ularni bajaradi. Bu tajovuzkorga ma'lumotlarni o'g'irlash yoki ma'lumotni o'zgartirish kabi istalgan natijaga erishish imkonini beradi."
+            ]
+          },
+          {
+            "title": "5. Ma'lumotlarni chiqarish:",
+            "steps": [
+              "In-band vs. Tarmoqdan tashqari: SQL inyeksiyasining turiga qarab, tajovuzkor natijalarni to'g'ridan-to'g'ri ilovaning javobi (in-band) orqali olishi yoki tajovuzkor tomonidan boshqariladigan alohida serverga yuborishi mumkin (banddan tashqari)."
+            ]
+          }
+        ],
+        "prevention": {
+          "title": "Ma'lumotlar bazasini himoya qilish: SQL inyeksiyasining oldini olish usullari",
+          "steps": [
+            {
+              "title": "1. Kirishni tekshirish va tozalash:",
+              "steps": [
+                "Foydalanuvchi kiritishini tekshirish: foydalanuvchi kiritish maydonlarida qanday turdagi ma’lumotlarga ruxsat berilganligi uchun maxsus qoidalarni belgilang. Masalan, foydalanuvchi nomi maydoni faqat harf-raqamli belgilar va pastki chiziqni qabul qilishi mumkin. Belgilangan qoidalarga mos kelmaydigan har qanday kiritishni rad eting.",
+                "Foydalanuvchi kiritishini tozalang: ishlov berishdan oldin foydalanuvchi kiritgan har qanday potentsial zararli belgilarni olib tashlang yoki undan qoching. Bu maxsus belgilarni o'chirish, maxsus belgilarni kodlash yoki maqbul belgilarni belgilash uchun oq ro'yxatlardan (ruxsat berilgan ro'yxatlardan) foydalanish kabi usullarni o'z ichiga olishi mumkin."
+              ]
+            },
+            {
+              "title": "2. Parametrlangan so‘rovlar:",
+              "steps": [
+                "Koddan ma'lumotlarni ajratish: Parametrlangan so'rovlar SQL kodini (so'rovning tuzilishi) foydalanuvchi kiritishidan (qo'shilayotgan ma'lumotlardan) ajratib turadi. Bu foydalanuvchi kiritishining SQL kodi sifatida talqin qilinishini oldini oladi.",
+                "To'ldiruvchilar va bog'lash: Parametrlangan so'rovlar SQL kodidagi to'ldiruvchilardan foydalanadi va foydalanuvchining haqiqiy kiritishi ushbu to'ldiruvchilarga alohida 'bog'lanadi'. Ma'lumotlar bazasi mexanizmi foydalanuvchi kiritgan ma'lumotlarga kod emas, balki ma'lumot sifatida qaraydi, bu esa inyeksiya xavfini kamaytiradi."
+              ]
+            },
+            {
+              "title": "3. Eng kam imtiyoz printsipi:",
+              "steps": [
+                "Minimal ruxsat berish: Ma'lumotlar bazasi foydalanuvchilariga o'z vazifalarini bajarish uchun zarur bo'lgan minimal darajadagi imtiyozlarni bering. Agar tajovuzkor ruxsatsiz kirishga erishsa, bu mumkin bo'lgan zararni kamaytiradi.",
+                "Ma'lumotlar bazasiga kirishni cheklash: Ma'lumotlar bazasiga kirishni faqat vakolatli foydalanuvchilar va ilovalar uchun cheklash. Kundalik operatsiyalar uchun yuqori imtiyozlarga ega umumiy hisoblardan foydalanishdan saqlaning."
+              ]
+            },
+            {
+              "title": "4. Xavfsiz kodlash amaliyotlari:",
+              "steps": [
+                "Dasturchilarning xabardorligi: Ishlab chiquvchilarni SQL inyeksiya zaifliklari va xavfsiz kodlash uchun eng yaxshi amaliyotlar haqida o'rgating. Bunga to'g'ri kiritilgan ma'lumotlarni qayta ishlash, tayyorlangan bayonotlardan foydalanish va dinamik SQL qurilishidan qochish kiradi.",
+                "Kodlarni ko'rib chiqish: Joylashtirishdan oldin SQL inyeksiyasining potentsial zaifliklarini aniqlash va bartaraf etish uchun kodni ko'rib chiqish jarayonlarini amalga oshiring."
+              ]
+            },
+            {
+              "title": "5. Ma'lumotlar bazasi xavfsizligi choralari:",
+              "steps": [
+                "Dasturiy ta'minotni yangilab turing: Ma'lumotlar bazasi dasturiy ta'minoti eng so'nggi xavfsizlik yamoqlari bilan yangilanganligiga ishonch hosil qiling. Ushbu yamalar ko'pincha ma'lum SQL inyeksiya zaifliklarini hal qiladi.",
+                "Doimiy xavfsizlik tekshiruvlari: ma'lumotlar bazasi muhitidagi har qanday zaifliklarni aniqlash va bartaraf etish uchun muntazam xavfsizlik tekshiruvlarini o'tkazing."
+              ]
+            },
+            {
+              "title": "6. Veb-ilovalar xavfsizlik devorlari (WAFs):",
+              "steps": [
+                "Qo'shimcha xavfsizlik qatlami: qo'shimcha xavfsizlik qatlami sifatida veb-ilovalar xavfsizlik devorini (WAF) joriy qilishni ko'rib chiqing. WAF-lar zararli trafikni, shu jumladan SQL inyeksiya zaifliklaridan foydalanishga urinishlarni aniqlash va blokirovka qilishga yordam beradi."
+              ]
+            },
+            {
+              "title": "7. Bosqinlarni aniqlash va oldini olish tizimlari (IDS/IPS):",
+              "steps": [
+                "Tarmoq xavfsizligi monitoringi: SQL inyeksiya urinishini ko'rsatishi mumkin bo'lgan shubhali harakatlar uchun tarmoq trafigini kuzatish uchun tajovuzni aniqlash va oldini olish tizimlarini (IDS/IPS) o'rnating."
+              ]
+            }
+          ],
+          "conclusion": "Ushbu oldini olish usullarining kombinatsiyasini amalga oshirish va faol xavfsizlik holatini saqlab qolish orqali siz SQL inyeksiya hujumlari xavfini sezilarli darajada kamaytirishingiz va ma'lumotlar bazalaringizning yaxlitligini himoya qilishingiz mumkin."
+        }
+      },
+
+
+
+      
+        "zeroDayAttack": {
+          "title": "Nolinchi kunlik hujum",
+          "description": "Nolinchi kunlik hujum, shuningdek, 0 kunlik hujum sifatida ham tanilgan, kompyuter dasturiy ta'minoti, apparat yoki proshivkalarida ilgari noma'lum bo'lgan zaiflikdan foydalanadigan kiberhujumdir. Dasturiy ta'minot sotuvchisi zaiflikdan bexabar bo'lgani uchun, tuzatishlar ishlab chiqilmaguncha va o'rnatilmaguncha tizimlarni himoyasiz qoladigan tuzatish yoki boshqa yumshatish strategiyasi mavjud emas.",
+          "mainAspects": "Nolinchi kunlik hujumlarning asosiy jihatlari:",
+          "aspectsList": [
+            "Noma'lumlikdan foydalanish: Hujumchilar dasturiy ta'minot sotuvchisi (yoki foydalanuvchi) bilmagan zaiflikdan foydalanadilar. Bu ularga sezilarli ustunlik beradi, chunki hujumning oldini olish uchun xavfsizlik choralari mavjud emas.",
+            "Tez joylashtirish: Nolinchi kunlik hujumlar ko'pincha zaiflik aniqlangandan so'ng, tuzatish mavjud bo'lgunga qadar imkoniyat oynasini maksimal darajada oshirish uchun tezda boshlanadi.",
+            "Murakkablik va maqsadlilik: Nolinchi kunlik hujumlar ko'pincha murakkab va ishlab chiqish va joylashtirish uchun yuqori darajadagi texnik tajribani talab qiladi. Ular ko'pincha qimmatli ma'lumotlar yoki muhim infratuzilmaga ega bo'lgan muayyan tashkilotlar yoki tizimlarga qarshi qaratilgan."
+          ],
+          "howItWorks": "Nolinchi kunlik hujumlar qanday ishlaydi:",
+          "howItWorksSteps": [
+            "Zaifliklarni aniqlash: Hujumchilar (yoki ba'zan xavfsizlik tadqiqotchilari) dasturiy ta'minot, apparat yoki proshivkadagi nuqsonni topadilar. Bu kamchilik dasturlash xatosi, dizayn nazorati yoki asosiy tizimdagi zaiflik bo'lishi mumkin.",
+            "Ekspluatatsiyani rivojlantirish: Hujumchilar aniqlangan zaiflikka qaratilgan ekspluatatsiya kodini ishlab chiqadilar. Ushbu kod tizimlarga ruxsatsiz kirish, ma'lumotlarni o'g'irlash yoki operatsiyalarni buzish uchun ishlatilishi mumkin.",
+            "Hujumni ishga tushirish: Hujumchilar zaif tizimlarga qarshi ekspluatatsiya kodini ishga tushiradilar. Yamoq mavjud emasligi sababli, bu tizimlar hujumga qarshi himoyasiz.",
+            "Ekspluatatsiya va zarar: Agar muvaffaqiyatli bo'lsa, hujum tajovuzkorlarga maxfiy ma'lumotlarni o'g'irlash, zararli dasturlarni joylashtirish yoki tizimlarni nazorat qilish kabi maqsadlariga erishish imkonini beradi."
+          ],
+          "impact": "Nolinchi kunlik hujumlarning ta'siri:",
+          "impactList": [
+            "Ma'lumotlarning buzilishi: Buzg'unchilar moliyaviy ma'lumotlar, shaxsiy yozuvlar yoki intellektual mulk kabi nozik ma'lumotlarni o'g'irlash uchun nol kunlik zaifliklardan foydalanishlari mumkin.",
+            "Tizimning uzilishlari: Hujumlar muhim tizimlar va infratuzilmani buzishi mumkin, bu esa moliyaviy yo'qotishlarga va ishlamay qolishga olib keladi.",
+            "Zararli dasturiy ta'minotni o'rnatish: Nolinchi kunlik hujumlar tizimlarni yanada buzishi va ma'lumotlarni o'g'irlashi mumkin bo'lgan zararli dasturlarni o'rnatish uchun ishlatilishi mumkin.",
+            "Obro'ga zarar: Muvaffaqiyatli nol kunlik hujumlarni boshdan kechirgan tashkilotlar xavfsizlik va ma'lumotlarning buzilishi tufayli obro'siga putur etkazishi mumkin."
+          ]
+        },
+
+  
+          "zeroDayProtection": {
+            "title": "Zero-Day Hujumlardan Himoya Qilish",
+            "stepsDescription": "To'liq nol kunlik hujumlarning oldini olish imkonsiz bo'lsa-da, himoyangizni yaxshilash uchun qadamlar qo'yishingiz mumkin:",
+            "steps": [
+              {
+                "title": "Dasturiy Ta'minotni Yangilashlari:",
+                "description": "Operatsion tizim, ilovalar, proshivka va xavfsizlik dasturlarini eng so'nggi xavfsizlik yomg'irlari bilan yangilab turing. Ushbu yangilanishlar ko'pincha tajovuzkorlar foydalanishi mumkin bo'lgan zaifliklarni ko'rib chiqadi."
+              },
+              {
+                "title": "Xavfsizlik Dasturi:",
+                "description": "Shubhali harakatni aniqlash va blokirovka qilish uchun hujumni aniqlash, zararli dasturlardan himoya qilish va xatti-harakatlar monitoringi kabi xususiyatlarga ega xavfsizlik dasturidan foydalaning."
+              },
+              {
+                "title": "Ilovalarning Oq Roʻyxati:",
+                "description": "Potensial zaifliklar uchun hujum maydonini kamaytiradigan, faqat ruxsat berilgan ilovalarning tizimingizda ishlashiga imkon beruvchi ilovalar oq roʻyxatini amalga oshirishni oʻylab koʻring."
+              },
+              {
+                "title": "Tarmoq Segmentatsiyasi:",
+                "description": "Agar tizim nol kunlik hujum bilan buzilgan bo'lsa, mumkin bo'lgan zararni minimallashtirish uchun tarmog'ingizni segmentlarga ajrating."
+              },
+              {
+                "title": "Xavfsizlik Bo'yicha Trening:",
+                "description": "Foydalanuvchilarni fishing urinishlari yoki tajovuzkorlar nol kunlik zaifliklardan foydalanish uchun foydalanishi mumkin bo'lgan ijtimoiy muhandislik taktikalarini aniqlash va oldini olishga yordam berish uchun kiberxavfsizlikning eng yaxshi amaliyotlari haqida o'rgating."
+              },
+              {
+                "title": "Tahdid Razvedkasi:",
+                "description": "Nufuzli xavfsizlik manbalariga rioya qilish orqali so'nggi kibertahdidlar va zaifliklar haqida xabardor bo'ling. Bu potentsial hujumlarga tayyorgarlik ko'rish va oldini olish choralarini ko'rishga yordam beradi."
+              }
+            ],
+            "additionalAdvice": "Biroq, to'liq himoyaga erishish haqiqatga to'g'ri kelmasa ham, mudofaangizni sezilarli darajada yaxshilash va nol kunlik hujumlar ta'sirini yumshatish uchun siz hali ham ko'p narsalarni qilishingiz mumkin. Qo'shimcha maslahatlar:",
+            "additionalSteps": [
+              "Qatlamli mudofaa: Dasturiy ta'minotni yangilab turish, xavfsizlik dasturlarini qo'llash, tarmoq segmentatsiyasi va xavfsizlikni bilish bo'yicha trening kabi turli usullarni birlashtirgan ko'p qatlamli xavfsizlik yondashuvi hujumga qarshi turish qobiliyatingizni sezilarli darajada yaxshilaydi.",
+              "Erta aniqlash: Xavfsizlik monitoringi vositalari va hujumni aniqlash tizimlari nol kunlik hujumni ko'rsatishi mumkin bo'lgan shubhali faoliyatni aniqlashga yordam beradi. Hujumni qanchalik tez aniqlasangiz, tezroq zararni bartaraf etish choralarini ko'rishingiz mumkin.",
+              "Xabardor bo'lish: O'zingizni eng so'nggi kibertahdidlar va nol kunlik zaifliklar haqida doimiy ravishda yangilab turing. Bu bilim sizga o'z himoyangizni rivojlanayotgan tahdidlarga moslashtirish va hujum sodir bo'lganda tezda javob berishga tayyor bo'lish imkonini beradi.",
+              "Voqealarga javob berish rejasi: Agar nol kunlik hujum tizimlaringizni buzsa, yaxshi aniqlangan hodisaga javob berish rejasiga ega bo'lishingiz sizga samarali javob berishga yordam beradi. Ushbu reja cheklov choralarini ko'rsatishi kerak, yo'q qilishtiklanish va aloqa."
+            ],
+            "conclusion": "Qiyinchiliklarni tushunish va faol choralar ko'rish orqali, veb-saytingiz yoki tarmog'ingizga nol kunlik hujumlar xavfi va ta'sirini sezilarli darajada kamaytirishingiz mumkin."
+          },
+
+
+
+
+
+
+
+
+          
+          
+            "statistics": {
+              "title": "2019-2024 yillar uchun kiberjinoyatlar statistikasi",
+              "points": [
+                "2023-yilda 30 million yangi zararli dastur namunalari aniqlandi ( AV-Test ). Bu, aslida, o'tgan yilga nisbatan uchdan ikki baravar kamayganini ko'rsatadi.",
+                "2019-yilda kuzatilgan zararli dasturlarning 93,6 foizi polimorf edi , ya’ni u aniqlashdan qochish uchun o‘z kodini doimiy ravishda o‘zgartirish imkoniyatiga ega ( 2020 Webroot tahdid hisoboti ).",
+                "Bir marta yuqtirgan biznes kompyuterlarining 45 foizi va iste'molchi shaxsiy kompyuterlarining 53 foizi o'sha yil ichida qayta infektsiyalangan ( 2022-yil Webroot tahdid hisoboti ).",
+                "Merilend universitetida 2007-yilda o'tkazilgan tadqiqot shuni ko'rsatdiki, zararli xakerlar avvallari kompyuterlar va tarmoqlarga har 39 soniyada bir marta hujum qilishgan . Internetdagi jinoyatlar bo‘yicha shikoyat markazining 2022 yilgi hisobotida o‘sha yili 800 944 ta xabar borligi aniqlangan. Bu har 0,65 soniyada bitta muvaffaqiyatli hujum amalga oshirilgan degani.",
+                "So‘rovda qatnashgan tashkilotlarning 84,7 foizi muvaffaqiyatli kiberhujumga uchragan.  Bu 2022-yildagi 85,3 foizdan va 2021 yildagi 86,2 foizdan kam. ( CyberEdge Group 2023 Cyberthreat Defense Report ).",
+                "2025-yilga borib kiberjinoyatlarning global zarari yiliga 10,5 trillion dollargacha yetishi kutilmoqda (Cybersecurity Ventures)."
+              ],
+              "ransomware": {
+                "title": "Ransomware statistikasi",
+                "intro": "So'nggi yillarda to'lov dasturini yuqtirish darajasi keskin oshdi, bu asosan onlayn o'rganish va masofaviy ishlash platformalarining ahamiyati ortishi bilan bog'liq.",
+                "points": [
+                  "Birgina 2023-yilning birinchi yarmida AQShning to‘lov dasturi hujumlari taxminan 449 million dollarga tushgan. ( Emsisoft ).",
+                  "2022-yilda 493,3 million to‘lov dasturi hujumi sodir bo‘ldi, bu o‘tgan yilga nisbatan bir oz pasaygan. ( SonicWall ).",
+                  "2023 yilgi hisobotga ko'ra, ransomware hujumlarining 93 foizi maxsus maqsadli zaxira omborlariga qaratilgan va bu urinishlarning 75 foizi muvaffaqiyatli bo'lgan . ( Veeam ).",
+                  "Dunyo bo'ylab har soatda 37 700 dan ortiq to'lov dasturi hujumlari sodir bo'ladi. Bu har daqiqada taxminan 578 ta to'lov dasturi hujumi. ( Metyu Vudvord ).",
+                  "2022-yilda Amerika ta’lim muassasalari to‘lovga oid hujumlar natijasida ishlamay qolishlari sababli taxminan 9,45 milliard dollar yo‘qotdi.",
+                  "Ransomware to'lovlari yangi yuqori darajaga yetdi. 2023-yilning ikkinchi choragida o‘rtacha to‘lov 1,54 million dollarni tashkil etdi, bu o‘tgan yilga nisbatan deyarli 100 foizga ko‘p. ( Koveware )."
+                ],
+                "quarterlyPayments": "Chorak bo'yicha to'lovlar",
+                "impact": "2023-yilda ransomware Germaniya, Saudiya Arabistoni va Xitoydagi korxonalarga eng og‘ir zarba berdi.",
+                "countriesAffected": "So'nggi 12 oy ichida to'lov dasturidan jabrlangan tashkilotlarning mamlakatlar bo'yicha foizlari"
+              },
+              "ddos": {
+                "title": "DDoS hujumlari davomiyligi va chastotasi bo'yicha o'sib boradi",
+                "intro": "Internetga har qachongidan ham ko'proq himoyalanmagan qurilmalar ulanganligi sababli, kiberjinoyatchilar o'zlarining qayta ishlash imkoniyatlaridan to'liq foydalanmoqdalar. Botnetlarga jalb qilingandan so'ng , ular kuchli DDoS hujumlarini boshlash uchun o'zlarining jamoaviy kuchlaridan foydalanadilar, bu kompaniyalar deyarli omon qolmaydi.",
+                "points": [
+                  "2022-yilning uchinchi choragida DDoS hujumlari soni 2021-yilning shu davriga nisbatan 4,5 baravardan oshgan. ( Kasperskiy laboratoriyasi ).",
+                  "Tashkilotlarning 71 foizi DDoS tahdidiga duch kelgan."
+                ]
+              },
+              "phishing": {
+                "title": "2022-yilda fishing biroz kamaydi",
+                "intro": "Fishing 2022-yilda Internetdagi jinoyatlar bo‘yicha shikoyat markaziga (IC3) xabar qilingan jinoyatlarning eng yuqori turi bo‘ldi, biroq 2021-yilga nisbatan taxminan 20 000 taga kam hodisalar kuzatilgan. ( IC3 Internet Crime Report 2022 ).",
+                "points": [
+                  "2021-yilning 3-choragida APWG 1 286 000 dan ortiq noyob fishing veb-saytlarini aniqladi va 90 000 dan ortiq noyob fishing mavzularini kuzatdi.",
+                  "Fishing hujumlarining 30% dan ortig'i keyloggerlarni o'z ichiga oladi.(Cofense).",
+                  "Tog'-kon kompaniyalari zararli elektron pochta xabarlarini olish ehtimoli katta. (Symantec’ning 2019 yildagi Internet xavfsizligiga tahdidlar hisoboti).",
+                  "2019-yilning so‘nggi choragida fishing saytlarining 74 foizi HTTPS’dan foydalangan, bundan ikki yil oldin atigi 32 foiz. ( ENISA Threat Landscape 2020 – Fishing ).",
+                  "2019-yilda zararli qo‘shimchalarning deyarli 43 foizi Microsoft Office hujjatlari edi. Biroq, Microsoft makroslarni qo'llab-quvvatlashni o'chirib qo'yganligi sababli, tajovuzkorlar tobora ko'proq ZIP, LNK yoki ISO fayllariga o'tmoqda. (ENISA 2023).",
+                  "Dushanba - bu fishing xabarlarini yuborish uchun eng mashhur kun bo'lib, elektron pochta xabarlarining 30 foizi shu kuni yetkaziladi. (ENISA Threat Landscape 2020 – Fishing).",
+                  "Eng tez-tez taqlid qilinuvchi brendlar Microsoft (33 foiz), Amazon (9 foiz) va Google (8 foiz). ( Checkpoint Research Q4 2023 Brend Phishing hisoboti )."
+                ]
+              },
+              "physicalThreats": {
+                "title": "Kiber jinoyatlar statistikasi shuni ko'rsatadiki, jismoniy hujumlar ham ko'paymoqda:",
+    "points": [
+      "2020-yilda kiberxavfsizlik intsidentlarining 27 foizi jismoniy harakatlar bilan boshlangan yoki tugatilgan ( ENISA Threat Landscape 2020 – Physical Threats )",
+      "Jismoniy hujumlar modadan chiqib ketmoqda, 2023-yilda atigi 46 ta hodisa. Biroq, ENISA real joylarda joylashtiriladigan QR kodlarining ko‘payishini qayd etdi.",
+      "Yevropada bankomatlarga hujumlar 2020-yilning birinchi yarmida birinchi yarim yillik bilan solishtirganda 269 foizga oshdi. Tegishli yo'qotishlar o'tgan yilga nisbatan 1000 yevrodan 1 million yevroga oshgan. Biroq, 2021-yilning olti oyi davomida yo‘qotishlar 37 foizga kamayib, 0,63 million yevroga yetdi"
+    ]
+  },
+  "iot_attacks": {
+    "title": "IoT hujumlari hajmi ortib bormoqda",
+    "description": "Internetga ulangan qurilmalar soni 2020-yilda 31 milliarddan 2021- yilda 35 milliardga, 2025-yilda esa 75 milliardga ko'payishi kutilmoqda",
+    "points": [
+      "2020-yilda o'rtacha biznesdagi tarmoqqa ulangan barcha qurilmalarning 30 foizdan ortig'i IoT qurilmalari edi. (Palo Alto Networks)",
+      "Tibbiyot tizimlari zaifliklarning eng yuqori ulushiga ega, ammo CCTV kameralari, printerlar va VoIP telefonlari ham yuqori xavfga ega",
+      "Palo Alto hisobotida, shuningdek, IoT trafigining 98 foizi shifrlanmaganligini aniqladi.",
+      "2023-yilning birinchi olti oyida SonicWall Capture Labs tahdid tadqiqotchilari 77,9 million IoT zararli dasturlari hujumini qayd etdilar."
+    ],
+    "images": [
+      {"src": "iotstatistics", "alt": "iotstatistics"}
+    ],
+    "additional_points": [
+      "IoT xavfsizligi bozori 2024-yilda taxminan 6,6 milliard dollarga baholangan va kutilayotgan o‘sish sur’ati 33,53% bo‘lsa, 2029-yilga borib uning qiymati 28 milliard dollardan oshishi mumkin.",
+      "IoTni qo'llash Osiyo-Tinch okeani mintaqasida eng yuqori ko'rsatkichdir, bu asosan aqlli shahar infratuzilmasini (Morder Intelligence) o'zlashtirish tufayli."
+    ],
+    "additional_images": [
+      {"src": "iotstatistics2", "alt": "iotstatistics2"}
+    ]
+  },
+  "cybercrime_costs": {
+    "title": "Kiber jinoyatlar zarari",
+    "description_1": "McAfee The Hidden Costs of Cybercrime 2020 ma'lumotlariga ko'ra, hozirda dunyo yalpi ichki mahsulotining 1 foizi kiberjinoyatlar tufayli yo'qotilmoqda. Bundan tashqari, ikki yil ichida kiberjinoyatlarning global iqtisodiyotga tushgan narxi 50% dan oshdi.",
+    "image": {"src": "crimeprice", "alt": "crimeprice"},
+    "image_caption": "Kiberjinoyatning taxminiy o'rtacha zarari (McAfee)",
+    "description_2": "Va Atlas VPN tomonidan olib borilgan tadqiqot shuni ko'rsatdiki, kiberjinoyat jinoyatchilarga yiliga 1,5 trillion dollar daromad keltirmoqda. Bu Walmart daromadidan deyarli uch baravar ko'pdir.",
+    "description_3": "Shu bilan birga, zararli xakerlar va firibgarlar ham pul sarflashadi, ularning hujumlarini yanada samaraliroq qilishlari mumkin bo'lgan aktivlarga 'sarmoya kiritadilar'. Bu yerda Armor Dark Market Report 2020 da kuzatilgan narxlarning ba'zilari:",
+    "price_list": [
+      "Har xil zararli dasturlar: $2,68–80",
+      "ATM skimmerlari: $700–1500",
+      "Karta o'qiydiganlar yoki yozuvchilar: $149–990",
+      "Mashhur dasturiy ta'minotni ijaraga olish: oyiga $500",
+      "SMS spam xizmati: 1000 SMS uchun $18,99–19,99"
+    ]
+  }
+}
+
+            
+          }
+          
+
+
+
+
+        
+        
+      
+      
+    
+    
 
 
 
@@ -261,7 +556,7 @@
 
     
         
-}
+
     
 
 

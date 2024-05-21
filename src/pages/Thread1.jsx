@@ -11,7 +11,11 @@ function Thread1() {
       <strong>{t('phishingWhat')}</strong>
       <br/><br/>
 
+      <div className="image-container">
       <img src={fishing2} alt="fishing" />
+</div>
+
+      
       <p><br/>
         {t('phishingText')}
       </p>
@@ -70,9 +74,8 @@ function Thread1() {
       </ul>
       <br/>
 
-      <center>
-        <strong>{t('centeredText')}</strong>
-      </center>
+        <p>{t('centeredText')}</p>
+    
       <br/>
     </div>
   );

@@ -253,3 +253,25 @@ a {
 .about {
   color: white; /* Set the text color to white */
 }
+
+
+.image-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 100%; /* Image will take up 100% of the container width */
+}
+
+@media (min-width: 768px) {
+  .image-container img {
+    max-width: 50%; /* Image will take up 60% of the container width on screens larger than 768px */
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container img {
+    width: 100%; /* Image will take up 100% of the container width on screens smaller than 576px */
+  }
+}

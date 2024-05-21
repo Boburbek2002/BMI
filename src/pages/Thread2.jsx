@@ -13,7 +13,10 @@ const Thread2 = () => {
         {t('ransomwareWhat')}
       </strong>
       <br/><br/>
+      <div className="image-container">
       <img src={ransomware2} alt="ransomware" /><br/><br/>
+</div>
+      
       <p>
         {t('ransomwareText')}
       </p>

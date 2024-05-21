@@ -11,7 +11,7 @@ function Thread4() {
       <strong>{t('mitmTitle')}</strong>
       <br/><br/>
 
-      <div><img src={mitm2} alt="mitm2" /></div>
+      <div className='image-container'><img src={mitm2} alt="mitm2" /></div>
       <br/>
       <p><br/>
         {t('mitmText')}

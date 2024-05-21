@@ -28,7 +28,7 @@ const Services = () => {
     { image: about2, title: t('ransomware'), text: t('ransomwareDesc') },
     { image: about3, title: t('denyService'), text: t('denyServiceDesc') },
     { image: about4, title: t('manInTheMiddle'), text: t('manInTheMiddleDesc') },
-    { image: about5, title: t('sqlInjection'), text: t('sqlInjectionDesc') },
+    { image: about5, title: t('sqlInjection1'), text: t('sqlInjectionDesc') },
     { image: about6, title: t('zeroDay'), text: t('zeroDayDesc') },
     // Additional data for divs 7 to 12
     { image: about7, title: t('more'), text: t('more') },

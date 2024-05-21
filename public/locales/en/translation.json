@@ -221,7 +221,7 @@
       "denyServiceDesc": "DoS and DDoS attacks disrupt the normal functioning of a computer system, network, or website by flooding it with traffic.",
       "manInTheMiddle": "Man-in-the-Middle (MitM)",
       "manInTheMiddleDesc": "Man-in-the-Middle attacks occur when an attacker intercepts and potentially alters communication between two parties.",
-      "sqlInjection": "SQL Injection",
+      "sqlInjection1": "SQL Injection",
       "sqlInjectionDesc": "SQL Injection is a type of cyberattack where malicious SQL code is inserted into entry fields of web applications.",
       "zeroDay": "Zero-Day",
       "zeroDayDesc": "Zero-Day attacks exploit vulnerabilities in software or hardware that are unknown to the vendor or community.",
@@ -230,9 +230,300 @@
 
 
 
-      "home": "Welcome to our threat prevention website! We aim to educate individuals and organizations on how to identify and mitigate the risks posed by cyber threats"
+      "home": "Welcome to our threat prevention website! We aim to educate individuals and organizations on how to identify and mitigate the risks posed by cyber threats",
+
+
+
+
+
+
+
       
-    
+        "sqlInjection": {
+          "title": "SQL Injection: Database Attack",
+          "description": "SQL injection (SQLi) is a significant web security vulnerability that allows attackers to manipulate a website or application's database. By injecting malicious SQL code into user inputs, attackers can gain unauthorized access to sensitive information, modify or delete data, and even take control of the database server.",
+          "howItWorks": "How SQL Injection Works:",
+          "steps": [
+            "Vulnerable Input Fields: Websites and applications often have forms where users can enter information, such as login credentials, search queries, or product reviews. These input fields can be vulnerable to SQL injection if they do not properly sanitize user inputs.",
+            "Injecting Malicious Code: Attackers craft malicious SQL code disguised as normal user input. This code can be inserted into login forms, search bars, or even comment sections.",
+            "Exploiting the Database: When the application processes the user input, it unknowingly executes the embedded SQL code against the database. This can lead to various outcomes depending on the attacker's intent."
+          ],
+          "types": "Types of SQL Injection:",
+          "inBand": "In-band SQL Injection: The attacker's malicious code and the desired results are obtained through the same channel (e.g., a web page). This is often achieved by manipulating database responses to retrieve data.",
+          "errorBased": "Error-based SQLi: The attacker inserts code that triggers error messages from the database, revealing information about the database structure or contents.",
+          "unionBased": "Union-based SQLi: The attacker inserts code that uses the UNION operator to combine the attacker's desired data with legitimate results.",
+          "outOfBand": "Out-of-band SQL Injection: The attacker's malicious code sends the obtained data (e.g., stolen information) to an external server controlled by the attacker. This can make detection more difficult compared to in-band attacks.",
+          "blind": "Blind SQL Injection: The attacker inserts code that does not generate visible error messages or results on the web page. Instead, the attacker relies on observing the application's behavior (e.g., response time) to determine if the code was successful.",
+          "implementation": "How SQL Injection is Implemented",
+          "implementationDescription": "SQL injection (SQLi) is a powerful tool in an attacker's arsenal, allowing them to control databases and steal sensitive information. Here, we detail the steps attackers take to carry out an SQL injection attack:",
+          "stepsDetailed": [
+            {
+              "title": "1. Identifying the Target:",
+              "steps": [
+                "Scanning for Vulnerabilities: Attackers often use automated tools to scan websites and applications for vulnerabilities, including those susceptible to SQL injection.",
+                "Manual Testing: In some cases, attackers may manually check for vulnerabilities by testing input fields, search bars, or other user input areas."
+              ]
+            },
+            {
+              "title": "2. Crafting the Malicious Payload:",
+              "steps": [
+                "Understanding the Database: Attackers often need some knowledge about the type of database used (e.g., MySQL, SQL Server) to create an effective payload.",
+                "Creating the Code: The attacker crafts malicious SQL code disguised as normal user input."
+              ]
+            },
+            {
+              "title": "3. Injecting the Malicious Payload:",
+              "steps": [
+                "Targeting Input Fields: The attacker identifies web forms or functions that accept user input. This could be a login form, search bar, comment section, or any field where the application processes user-provided data.",
+                "Injecting the Code: The crafted malicious code is then entered into the user input field."
+              ]
+            },
+            {
+              "title": "4. Exploiting the Vulnerability:",
+              "steps": [
+                "Processing the Application: When the user submits the form or interacts with the manipulated web page, the application unknowingly processes the attacker's injected code.",
+                "Manipulating the Database: The database interprets the attacker's code as legitimate SQL statements and executes them. This allows the attacker to achieve their desired outcome, such as stealing or altering data."
+              ]
+            },
+            {
+              "title": "5. Extracting the Data:",
+              "steps": [
+                "In-band vs. Out-of-band: Depending on the type of SQL injection, the attacker can obtain the results directly through the application's response (in-band) or send the results to a separate server controlled by the attacker (out-of-band)."
+              ]
+            }
+          ],
+          "prevention": {
+            "title": "Securing Your Database: SQL Injection Prevention Methods",
+            "steps": [
+              {
+                "title": "1. Input Validation and Sanitization:",
+                "steps": [
+                  "Validating User Input: Implement specific rules for what type of data is allowed in user input fields. For example, a username field may only accept alphanumeric characters and underscores. Reject any input that does not conform to the defined rules.",
+                  "Sanitizing User Input: Remove or escape any potentially harmful characters from user input before processing it. This can include methods such as stripping special characters, encoding special characters, or using whitelists (allowed lists) to define acceptable characters."
+                ]
+              },
+              {
+                "title": "2. Parameterized Queries:",
+                "steps": [
+                  "Separating Code from Data: Parameterized queries separate SQL code (the structure of the query) from user input (the data being added). This prevents user input from being interpreted as SQL code.",
+                  "Placeholders and Binding: Parameterized queries use placeholders in the SQL code, and the user's actual input is bound to these placeholders separately. The database engine treats user input as data, not code, reducing the risk of injection."
+                ]
+              },
+              {
+                "title": "3. Principle of Least Privilege:",
+                "steps": [
+                  "Granting Minimal Permissions: Provide database users with the minimum level of privileges necessary to perform their tasks. This minimizes potential damage if an attacker gains unauthorized access.",
+                  "Restricting Database Access: Limit database access to authorized users and applications only. Avoid using general accounts with high privileges for routine operations."
+                ]
+              },
+              {
+                "title": "4. Secure Coding Practices:",
+                "steps": [
+                  "Developer Awareness: Educate developers about SQL injection vulnerabilities and best practices for secure coding. This includes properly handling input, using prepared statements, and avoiding dynamic SQL construction.",
+                  "Code Reviews: Implement code review processes to identify and mitigate potential SQL injection vulnerabilities before deployment."
+                ]
+              },
+              {
+                "title": "5. Database Security Measures:",
+                "steps": [
+                  "Keeping Software Updated: Ensure that database software is up-to-date with the latest security patches. These patches often address known SQL injection vulnerabilities.",
+                  "Regular Security Audits: Conduct regular security audits to identify and address any vulnerabilities in the database environment."
+                ]
+              },
+              {
+                "title": "6. Web Application Firewalls (WAFs):",
+                "steps": [
+                  "Additional Security Layer: Consider implementing a web application firewall (WAF) as an additional security layer. WAFs help detect and block malicious traffic, including attempts to exploit SQL injection vulnerabilities."
+                ]
+              },
+              {
+                "title": "7. Intrusion Detection and Prevention Systems (IDS/IPS):",
+                "steps": [
+                  "Network Security Monitoring: Deploy intrusion detection and prevention systems (IDS/IPS) to monitor network traffic for suspicious activities that may indicate SQL injection attempts."
+                ]
+              }
+            ],
+            "conclusion": "By implementing a combination of these prevention methods and maintaining an active security posture, you can significantly reduce the risk of SQL injection attacks and protect the integrity of your databases."
+          }
+        },
+
+
+
+
+
+
+
+
+        
+          "zeroDayAttack": {
+            "title": "Zero-Day Attack",
+            "description": "A zero-day attack, also known as a 0-day attack, is a cyberattack that exploits vulnerabilities in computer software, hardware, or firmware that are previously unknown. Because software vendors are unaware of the vulnerability, there is no patch or mitigation strategy in place to protect vulnerable systems until patches are developed and deployed.",
+            "mainAspects": "Main Aspects of Zero-Day Attacks:",
+            "aspectsList": [
+              "Exploiting Unknowns: Attackers exploit vulnerabilities unknown to software vendors (or users). This gives them a significant advantage since there are no security patches available to mitigate the attack.",
+              "Rapid Deployment: Zero-day attacks often start as soon as vulnerabilities are identified to maximize the window of opportunity before patches are available.",
+              "Complexity and Targeting: Zero-day attacks typically require high levels of technical expertise for development and deployment. They are often targeted at specific organizations or systems holding valuable information or critical infrastructure."
+            ],
+            "howItWorks": "How Zero-Day Attacks Work:",
+            "howItWorksSteps": [
+              "Identifying Vulnerabilities: Attackers (or sometimes security researchers) discover vulnerabilities in software, hardware, or firmware. This could be a programming error, design flaw, or vulnerability in the underlying system.",
+              "Exploiting the Vulnerability: Attackers develop exploit code targeting the identified vulnerability. This code can be used for unauthorized access, data theft, or disrupting operations.",
+              "Delivering the Attack: Attackers deploy the exploit code targeting vulnerable systems. Due to the absence of a patch, these systems are left unprotected."
+            ],
+            "impact": "Impact of Zero-Day Attacks:",
+            "impactList": [
+              "Data Compromise: Attackers can exploit zero-day vulnerabilities to steal sensitive financial data, personal records, or intellectual property.",
+              "System Disruption: Zero-day attacks can compromise critical systems and infrastructure, leading to financial losses and operational disruptions.",
+              "Installation of Malicious Software: Zero-day attacks can be used to further compromise systems and steal data by installing malicious software.",
+              "Reputational Damage: Organizations that fall victim to successful zero-day attacks may suffer reputational damage due to security breaches and data compromises."
+            ]
+          },
+        
+            "zeroDayProtection": {
+              "title": "Zero-Day Attack Protection",
+              "stepsDescription": "While completely preventing zero-day attacks may be impossible, you can enhance your defense by taking these steps:",
+              "steps": [
+                {
+                  "title": "Software Updates:",
+                  "description": "Keep operating systems, applications, firmware, and security software up to date with the latest security patches. These updates often address vulnerabilities that attackers can exploit."
+                },
+                {
+                  "title": "Security Software:",
+                  "description": "Utilize security software with features such as threat detection, malware protection, and behavior monitoring to detect and block suspicious activity."
+                },
+                {
+                  "title": "Application Whitelisting:",
+                  "description": "Consider implementing application whitelisting to restrict the execution of applications to only authorized ones, reducing the attack surface for potential vulnerabilities."
+                },
+                {
+                  "title": "Network Segmentation:",
+                  "description": "Segment your network into separate zones to minimize potential damage if a system is compromised by a zero-day attack."
+                },
+                {
+                  "title": "Security Training:",
+                  "description": "Educate users about social engineering tactics or methods attackers use to exploit zero-day vulnerabilities and provide best practices for cybersecurity."
+                },
+                {
+                  "title": "Threat Intelligence:",
+                  "description": "Stay informed about the latest cyber threats and zero-day vulnerabilities by monitoring reputable security sources. This knowledge helps tailor your defenses and prepare for potential attacks."
+                }
+              ],
+              "additionalAdvice": "However, even if achieving complete protection is not feasible, you can still significantly enhance your defenses and mitigate the impact of zero-day attacks by taking several additional measures. Additional recommendations include:",
+              "additionalSteps": [
+                "Layered Defense: Combine various methods such as software updates, security software deployment, network segmentation, and cybersecurity training to significantly improve your ability to defend against attacks.",
+                "Early Detection: Security monitoring tools and intrusion detection systems help identify potentially malicious activity that could indicate a zero-day attack. The sooner you detect an attack, the quicker you can mitigate the damage.",
+                "Stay Informed: Continuously update yourself on the latest cyber threats and zero-day vulnerabilities. This knowledge allows you to tailor your defense to evolving threats and be prepared to respond quickly to an attack.",
+                "Incident Response Plan: Having a well-defined incident response plan in place if your systems fall victim to a zero-day attack gives you an effective framework for responding promptly. This plan should outline escalation procedures, mitigation, and communication."
+              ],
+              "conclusion": "By understanding challenges and observing active defenses, you can significantly reduce the risk and impact of zero-day attacks on your website or network."
+            },
+
+
+
+
+
+
+
+            
+              "statistics": {
+                "title": "Cybercrime Statistics for 2019-2024",
+                "points": [
+                  "In 2023, 30 million new malware samples were discovered (AV-Test), indicating a more than twofold decrease compared to the previous year.",
+                  "In 2019, 93.6% of detected malware were polymorphic, meaning they have the ability to constantly change their code to evade detection (2020 Webroot Threat Report).",
+                  "45% of business computers and 53% of personal computers were reinfected within the same year (2022 Webroot Threat Report).",
+                  "A study conducted at Meriland University in 2007 showed that malicious hackers attack computers and networks once every 39 seconds. The Internet Crime Complaint Center's 2022 report identified 800,944 incidents of cybercrime that year, suggesting a successful attack occurred every 0.65 seconds.",
+                  "84.7% of surveyed organizations experienced successful cyberattacks, a decrease from 85.3% in 2022 and 86.2% in 2021 (CyberEdge Group 2023 Cyberthreat Defense Report).",
+                  "Global cybercrime damage is expected to reach up to $10.5 trillion annually by 2025 (Cybersecurity Ventures)."
+                ],
+                "ransomware": {
+                  "title": "Ransomware Statistics",
+                  "intro": "The rate of ransom payment has sharply increased in recent years, primarily due to the growing importance of online learning and remote work platforms.",
+                  "points": [
+                    "In the first half of 2023 alone, ransom payments in the United States reached an estimated $449 million (Emsisoft).",
+                    "In 2022, there were 493.3 million ransomware attacks, a nearly twofold increase from the previous year (SonicWall).",
+                    "According to the 2023 report, 93% of ransomware attacks were targeted at specific industries, with 75% of these attempts being successful (Veeam).",
+                    "There are over 37,700 ransomware attacks every hour worldwide, resulting in approximately 578 ransomware attacks per minute (Matthew Vadum).",
+                    "In 2022, American educational institutions lost an estimated $9.45 billion due to ransomware attacks.",
+                    "Ransomware payments reached a new high. The average payment in the second half of 2023 amounted to $1.54 million, an increase of nearly 100% from the previous year (Coveware)."
+                  ],
+                  "quarterlyPayments": "Payments by Quarter",
+                  "impact": "In 2023, ransomware caused the most severe damage to companies in Germany, Saudi Arabia, and China.",
+                  "countriesAffected": "Percentage of affected organizations by country within the last 12 months"
+                },
+                "ddos": {
+                  "title": "DDoS Attacks Continuity and Frequency on the Rise",
+                  "intro": "Due to the increasing prevalence of unsecured devices connected to the Internet, cybercriminals are taking full advantage of their ability to re-engage. After being recruited into botnets, they leverage their collective strength to launch powerful DDoS attacks, which can leave companies virtually incapacitated.",
+                  "points": [
+                    "The number of DDoS attacks in the third quarter of 2022 increased by 4.5 times compared to the same period in 2021 (Kaspersky Lab).",
+                    "71% of organizations have experienced a DDoS threat."
+                  ]
+                },
+                "phishing": {
+                  "title": "Phishing Declines Slightly in 2022",
+                  "intro": "Phishing remained the most prevalent type of crime reported to the Internet Crime Complaint Center (IC3) in 2022, but incidents decreased by approximately 20,000 compared to 2021 (IC3 Internet Crime Report 2022).",
+                  "points": [
+                    "In the third quarter of 2021, APWG identified over 1,286,000 unique phishing websites and tracked over 90,000 unique phishing campaigns.",
+                    "Over 30% of phishing attacks contain keyloggers (Cofense).",
+                    "Small businesses are highly vulnerable to malicious email attacks (Symantec's 2019 Internet Threats Report).",
+                    "74% of phishing sites used HTTPS in the last quarter of 2019, a 42% increase from two years earlier (ENISA Threat Landscape 2020 – Phishing).",
+                    "Nearly 43% of malicious attachments in 2019 were Microsoft Office documents. However, with Microsoft disabling macros, attackers are turning more to ZIP, LNK, or ISO files for exploitation (ENISA 2023).",
+                    "Monday is the most popular day for sending phishing emails, with 30% of emails delivered on that day (ENISA Threat Landscape 2020 – Phishing).",
+                    "The most frequently impersonated brands are Microsoft (33%), Amazon (9%), and Google (8%) (Checkpoint Research Q4 2023 Brand Phishing Report)."
+                  ]
+                },
+                "physicalThreats": {
+                  "title": "Cybercrime Statistics Show an Increase in Physical Attacks:",
+                  "points": [
+                    "27% of cybersecurity incidents in 2020 involved or were initiated by physical actions (ENISA Threat Landscape 2020 – Physical Threats).",
+                    "Physical attacks are on the rise, with 46 incidents recorded in 2023. However, ENISA noted an increase in QR code placements in physical locations.",
+                    "In Europe, ATM attacks increased by 269% in the first half of 2020 compared to the same six-month period in the previous year. The corresponding losses increased from €1,000 to €1 million. However, losses decreased by 37% over the six months of 2021, reaching €630,000."
+                  ]
+                },
+                "iot_attacks": {
+                  "title": "IoT Attacks Volume is Increasing",
+                  "description": "The number of devices connected to the Internet is expected to increase from 31 billion in 2020 to 35 billion in 2021 and 75 billion by 2025.",
+                  "points": [
+                    "In 2020, 30% of all devices connected to business networks were IoT devices (Palo Alto Networks).",
+                    "Medical systems have the highest vulnerability to exploitation, but CCTV cameras, printers, and VoIP phones are also at high risk.",
+                    "Palo Alto's report also found that 98% of IoT traffic is unencrypted.",
+                    "In the first six months of 2023, SonicWall Capture Labs researchers recorded 77.9 million IoT malware attacks."
+                  ],
+                  "images": [
+                    {"src": "iotstatistics", "alt": "iotstatistics"}
+                  ],
+                  "additional_points": [
+                    "The IoT security market is estimated to be worth $6.6 billion in 2024, with a projected annual growth rate of 33.53%, reaching $28 billion by 2029.",
+                    "Adoption of IoT is highest in the Asia-Pacific region, primarily due to the smart city infrastructure deployment (Morder Intelligence)."
+                  ],
+                  "additional_images": [
+                    {"src": "iotstatistics2", "alt": "iotstatistics2"}
+                  ]
+                },
+                "cybercrime_costs": {
+                  "title": "Cost of Cybercrime",
+                  "description_1": "According to the McAfee The Hidden Costs of Cybercrime 2020 data, cybercrime now accounts for 1% of global gross domestic product. Moreover, the global economic cost of cybercrime has increased by over 50% in two years.",
+                  "image": {"src": "crimeprice", "alt": "crimeprice"},
+                  "image_caption": "Estimated Average Cost of Cybercrime (McAfee)",
+                  "description_2": "Research by Atlas VPN shows that cybercrime generates $1.5 trillion in revenue annually for cybercriminals. This is nearly three times the revenue of Walmart.",
+                  "description_3": "In addition, malicious hackers and fraudsters also profit, investing in assets that could make their attacks more lucrative. Some of the prices observed in the Armor Dark Market Report 2020 include:",
+                  "price_list": [
+                    "Various malware: $2.68–80",
+                    "ATM skimmers: $700–1500",
+                    "Card readers or writers: $149–990",
+                    "Renting popular software exploits: $500 per month",
+                    "SMS spam services: $18.99–19.99 for 1000 SMS"
+                  ]
+                }
+              }
+            
+            
+            
+          
+          
+        
+        
+      
+          
 
 
 }

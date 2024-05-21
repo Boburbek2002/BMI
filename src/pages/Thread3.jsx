@@ -10,8 +10,10 @@ function Thread3() {
     <div className='container'>
       <strong>{t('DoSDDoSTitle')}</strong>
       <br/><br/>
-
+      <div className="image-container">
       <img src={ddos} alt="ddos" />
+</div>
+      
       <p><br/>
         {t('DoSDDoSText')}
       </p>

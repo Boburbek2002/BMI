@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -24,6 +24,8 @@ const nav__links = [
 
 const Header = ({ toggleTheme, theme }) => {
   const { t } = useTranslation();
+  const [menuOpen] = useState(false);
+
 
   return (
     <header className="header">
@@ -34,7 +36,7 @@ const Header = ({ toggleTheme, theme }) => {
               <img src={logo} alt="Logo" />
             </div>
 
-            <div className="navigation">
+            <div className={`navigation ${menuOpen ? 'open' : ''}`}>
               <ul className="menu">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
@@ -45,7 +47,10 @@ const Header = ({ toggleTheme, theme }) => {
                 ))}
               </ul>
             </div>
-            <LanguageSwitcher />
+
+            <div className="nav__middle">
+              <LanguageSwitcher />
+            </div>
           </div>
         </Row>
       </Container>
