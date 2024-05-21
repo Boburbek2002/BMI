@@ -21,10 +21,6 @@ const nav__links = [
     path: "resources",
     displayKey: "resourcesDisplay",
   },
-  {
-    path: "about",
-    displayKey: "aboutDisplay",
-  },
 ];
 
 const Header = ({ toggleTheme, theme }) => {
@@ -49,10 +45,7 @@ const Header = ({ toggleTheme, theme }) => {
               <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>
 
-            <div className="menu-icon" onClick={handleMobileMenuToggle}>
-              ☰
-            </div>
-
+            
             <div className={`navigation ${isMobileMenuOpen ? 'active' : ''}`}>
               <ul className="menu">
                 {nav__links.map((item, index) => (
@@ -64,6 +57,10 @@ const Header = ({ toggleTheme, theme }) => {
                 ))}
               </ul>
             </div>
+            <div className="menu-icon" onClick={handleMobileMenuToggle}>
+              ☰
+            </div>
+
           </div>
         </Row>
       </Container>

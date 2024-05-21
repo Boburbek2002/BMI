@@ -1,23 +1,23 @@
 /* ThemeToggle.css */
 .theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: var(--toggle-bg-color);
+    /* background-color: var(--toggle-bg-color); */
     color: var(--toggle-text-color);
+    width: 2em;
+    height: 2em;
     padding: 10px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s, color 0.
-    3s;
- 
-      cursor: pointer;
-      font-size: 1.5em;
-      display: flex;
-      align-items: center;
-    
-    
+    transition: background-color 0.3s, color 0.    3s;
+    cursor: pointer;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+  }
+
+  .sun {
+    color: yellow;
   }
   

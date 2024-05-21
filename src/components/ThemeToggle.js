@@ -8,7 +8,7 @@ const ThemeToggle = ({ theme, toggleTheme }) => {
   return (
     <div className="theme-toggle" onClick={toggleTheme}>
       {theme === 'day' ? (
-        <FontAwesomeIcon icon={faSun} size="2x" />
+        <FontAwesomeIcon className='sun' icon={faSun} size="2x" />
       ) : (
         <FontAwesomeIcon icon={faMoon} size="2x" />
       )}
