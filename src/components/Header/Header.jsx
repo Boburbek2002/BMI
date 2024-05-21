@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 import "./header.css";
 import logo from "./../../assets/images/Logo.png";
 import LanguageSwitcher from "../LanguageSwitcher";
-import '../../App.css'
+import ThemeToggle from "../ThemeToggle";
+import '../../App.css';
 
 const nav__links = [
   {
@@ -24,8 +25,11 @@ const nav__links = [
 
 const Header = ({ toggleTheme, theme }) => {
   const { t } = useTranslation();
-  const [menuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <header className="header">
@@ -36,7 +40,11 @@ const Header = ({ toggleTheme, theme }) => {
               <img src={logo} alt="Logo" />
             </div>
 
-            <div className={`navigation ${menuOpen ? 'open' : ''}`}>
+            <div className="menu-icon" onClick={handleMobileMenuToggle}>
+              ☰
+            </div>
+
+            <div className={`navigation ${isMobileMenuOpen ? 'active' : ''}`}>
               <ul className="menu">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
@@ -48,8 +56,9 @@ const Header = ({ toggleTheme, theme }) => {
               </ul>
             </div>
 
-            <div className="nav__middle">
+            <div className="header__right">
               <LanguageSwitcher />
+              <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>
           </div>
         </Row>

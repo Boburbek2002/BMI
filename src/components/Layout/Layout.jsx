@@ -4,8 +4,7 @@ import Footer from "../Footer/Footer";
 import Routers from "../../routers/Routers";
 import GridLoader from "react-spinners/GridLoader";
 import i18n from '../../i18n';
-import ThemeToggle from '../ThemeToggle';
-import './layout.css'; // Ensure you have the necessary CSS for theme classes
+import './layout.css';
 
 const Layout = () => {
   const [loading, setLoading] = useState(true);
@@ -41,7 +40,6 @@ const Layout = () => {
       ) : (
         <div>
           <Header toggleTheme={toggleTheme} theme={theme} />
-          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
           <div>
             <Routers />
           </div>
