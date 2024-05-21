@@ -18,8 +18,12 @@ const nav__links = [
     displayKey: "statisticsDisplay",
   },
   {
-    path: "resurses",
+    path: "resources",
     displayKey: "resourcesDisplay",
+  },
+  {
+    path: "about",
+    displayKey: "aboutDisplay",
   },
 ];
 
@@ -40,6 +44,11 @@ const Header = ({ toggleTheme, theme }) => {
               <img src={logo} alt="Logo" />
             </div>
 
+            <div className="header__middle">
+              <LanguageSwitcher />
+              <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+            </div>
+
             <div className="menu-icon" onClick={handleMobileMenuToggle}>
               ☰
             </div>
@@ -54,11 +63,6 @@ const Header = ({ toggleTheme, theme }) => {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div className="header__right">
-              <LanguageSwitcher />
-              <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>
           </div>
         </Row>
