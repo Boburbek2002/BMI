@@ -275,3 +275,6 @@ a {
     width: 100%; /* Image will take up 100% of the container width on screens smaller than 576px */
   }
 }
+.non-breaking-space::after {
+  content: "\00A0\00A0"; /* Adds two non-breaking spaces */
+}

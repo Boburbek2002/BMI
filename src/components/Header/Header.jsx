@@ -18,7 +18,7 @@ const nav__links = [
     displayKey: "statisticsDisplay",
   },
   {
-    path: "resources",
+    path: "resurses",
     displayKey: "resourcesDisplay",
   },
 ];
@@ -31,6 +31,10 @@ const Header = ({ toggleTheme, theme }) => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleMenuItemClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <Container>
@@ -40,27 +44,29 @@ const Header = ({ toggleTheme, theme }) => {
               <img src={logo} alt="Logo" />
             </div>
 
-            <div className="header__middle">
-              <LanguageSwitcher />
-              <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-            </div>
-
-            
             <div className={`navigation ${isMobileMenuOpen ? 'active' : ''}`}>
               <ul className="menu">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <NavLink to={item.path} activeClassName="nav__active">
+                    <NavLink 
+                      to={item.path} 
+                      activeClassName="nav__active"
+                      onClick={handleMenuItemClick}
+                    >
                       {t(item.displayKey)}
                     </NavLink>
                   </li>
                 ))}
               </ul>
             </div>
+           
             <div className="menu-icon" onClick={handleMobileMenuToggle}>
               ☰
             </div>
-
+            <div className="header__middle">
+              <LanguageSwitcher />
+              <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+            </div>
           </div>
         </Row>
       </Container>
