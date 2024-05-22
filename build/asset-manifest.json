@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ab993afb.css",
+    "main.js": "/static/js/main.b47407ec.js",
+    "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
+    "static/media/remixicon.eot?t=1590207869815": "/static/media/remixicon.5cb99e6cba5a4619063f.eot",
+    "static/media/remixicon.ttf?t=1590207869815": "/static/media/remixicon.f2616f597cf98f38d234.ttf",
+    "static/media/remixicon.woff?t=1590207869815": "/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/ransomstatistics2.jpg": "/static/media/ransomstatistics2.7c2131d8d9e4ca14fa14.jpg",
+    "static/media/remixicon.woff2?t=1590207869815": "/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/zeroday2.jpg": "/static/media/zeroday2.f29a4edef940ddef6c54.jpg",
+    "static/media/ransomstatistics.jpg": "/static/media/ransomstatistics.fc3fdab0a69ab06ab79b.jpg",
+    "static/media/ddosstatistics.png": "/static/media/ddosstatistics.51f12a119cc44eff6066.png",
+    "static/media/about.jpg": "/static/media/about.964c9bce75cd1b42f3c9.jpg",
+    "static/media/ddos.jpg": "/static/media/ddos.a6ecbd57fe1a9bfb456c.jpg",
+    "static/media/iotstatistics2.png": "/static/media/iotstatistics2.9bd73fb5aac6688ae67d.png",
+    "static/media/crimeprice.png": "/static/media/crimeprice.6b1af27006ca7692f4af.png",
+    "static/media/fishing.jpg": "/static/media/fishing.d74111c45db8040c95f1.jpg",
+    "static/media/iotstatistics.png": "/static/media/iotstatistics.2ed5e81861325eab1b92.png",
+    "static/media/mitm2.jpg": "/static/media/mitm2.912ae3e83f1773164997.jpg",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.ab993afb.css.map": "/static/css/main.ab993afb.css.map",
+    "main.b47407ec.js.map": "/static/js/main.b47407ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab993afb.css",
+    "static/js/main.b47407ec.js"
+  ]
+}
